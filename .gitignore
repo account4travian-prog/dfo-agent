@@ -1,0 +1,25 @@
+# The two forks are their own git repositories (see scripts/setup-upstream.sh).
+/upstream/
+
+# Original Daggerfall data is never committed (it is not redistributable).
+ARENA2/
+*.BSA
+*.CFG
+*.STD
+# Planner data extracted from your own game files (planner/tools/extract-game-data.mjs).
+/planner/data/game-data.json
+
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+
+# Guide builds derived from your own game files (planner/tools/build-world-map.mjs).
+/docs/build/
+.wrangler/
+
+# Audit evidence and agent work products (not part of the published site).
+/audit/
+
+/handbook/assistant/.wrangler-dry/
+/handbook/assistant/.wrangler/

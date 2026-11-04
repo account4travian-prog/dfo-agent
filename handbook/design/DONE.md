@@ -1,0 +1,1 @@
+2026-10-21 - GPT-6.1 Sol: applied Direction A to the real site; delivered original SVG wordmark, favicon and 20-icon sprite, Roman plate route, SVG/WebP stage-art integration, credits and regression checks. Browser visual pass remains with Claude.

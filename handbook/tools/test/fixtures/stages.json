@@ -1,0 +1,8 @@
+{
+  "commit": "0df2d87eb",
+  "stages": [
+    { "id": "begin", "number": 0, "title": "Before you begin", "gate": "None", "promise": "Understand your first steps." },
+    { "id": "growth", "number": 1, "title": "The next route", "gate": "Renown 10", "promise": "Make progress along the route." },
+    { "id": "reference", "number": null, "title": "Reference", "gate": "Always available", "promise": "Find a term." }
+  ]
+}

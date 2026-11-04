@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The DFO Online Handbook · Direction A: Field Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* Direction A: Field Atlas. Tokens. */
+:root{
+  --font-head:"Cormorant Garamond",Georgia,serif; --font-body:"Source Serif 4",Georgia,serif; --font-ui:"Inter",system-ui,sans-serif; --font-mono:ui-monospace,Menlo,Consolas,monospace;
+  --head-weight:600; --head-tracking:-.01em; --leading:1.6;
+  --step--1:.875rem; --step-0:1.125rem; --step-1:1.3rem; --step-2:1.75rem; --step-3:2.2rem; --step-4:clamp(2.4rem,5vw,3.4rem);
+  --space-1:.25rem; --space-2:.5rem; --space-3:1rem; --space-4:1.5rem; --space-5:2.25rem; --space-6:3rem; --space-7:5rem;
+  --radius:2px; --max:72rem; --measure:42rem;
+  --bg:#F4EEE1; --surface:#FAF6EC; --surface-2:#ECE4D2; --text:#1F2328; --text-soft:#3A3F45; --muted:#5C6066; --heading:#1A1D21;
+  --rule:#DDD3BE; --rule-strong:#C6B99C; --brass:#8C6D2F; --sea:#2D6575; --link:#2D6575; --link-hover:#1E4A57; --focus:#2D6575;
+  --shadow:0 8px 24px rgba(31,35,40,.12);
+}
+:root[data-theme=dark]{
+  --bg:#14171B; --surface:#1B1F24; --surface-2:#242931; --text:#E9E1CF; --text-soft:#D3CBB9; --muted:#A39C8E; --heading:#F2EBDA;
+  --rule:#2C3138; --rule-strong:#3B424B; --brass:#B8944A; --sea:#6FA9B6; --link:#6FA9B6; --link-hover:#9CC7D0; --focus:#6FA9B6;
+  --shadow:0 8px 24px rgba(0,0,0,.5);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#14171B; --surface:#1B1F24; --surface-2:#242931; --text:#E9E1CF; --text-soft:#D3CBB9; --muted:#A39C8E; --heading:#F2EBDA;
+  --rule:#2C3138; --rule-strong:#3B424B; --brass:#B8944A; --sea:#6FA9B6; --link:#6FA9B6; --link-hover:#9CC7D0; --focus:#6FA9B6;
+  --shadow:0 8px 24px rgba(0,0,0,.5);}}
+/* A: plate numerals and dotted sea-lane route */
+.hero{border-bottom:1px solid var(--rule);padding-bottom:var(--space-5)}
+.hero h1{font-size:clamp(2.8rem,6vw,4.2rem);font-weight:600}
+.ring{display:inline-grid;place-items:center;width:3rem;height:3rem;border:1px solid var(--brass);border-radius:50%;font-family:var(--font-head);font-weight:600;font-size:1.15rem;color:var(--heading);background:var(--bg);flex:none;position:relative;z-index:1}
+.ring.sm{width:1.7rem;height:1.7rem;font-size:.8rem;vertical-align:middle;margin-right:.3em}
+.route{list-style:none;margin:var(--space-4) 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));gap:var(--space-3) var(--space-5);position:relative}
+.wp-link{display:flex;gap:var(--space-3);align-items:center;text-decoration:none;color:var(--text);padding:var(--space-2) 0;border-bottom:1px dotted var(--sea)}
+.wp-link:hover .ring{background:var(--brass);color:var(--bg)}
+.wp-title{display:block;font-family:var(--font-head);font-size:var(--step-1);font-weight:600;color:var(--heading)}
+.wp-gate{display:block;font-family:var(--font-ui);font-size:var(--step--1);color:var(--muted)}
+.page h2{border-bottom:1px solid var(--rule);padding-bottom:.2em}
+.page h2::before{content:"";display:inline-block;width:.9rem;height:1px;background:var(--brass);vertical-align:middle;margin-right:.5rem}
+.glance h2::before,.toc h2::before{display:none}
+
+
+*,*::before,*::after{box-sizing:border-box}
+html{color-scheme:light dark}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:var(--step-0);line-height:var(--leading);-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{color:var(--link-hover)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--font-head);font-weight:var(--head-weight);line-height:1.15;letter-spacing:var(--head-tracking);color:var(--heading)}
+h1{font-size:var(--step-4);margin:0 0 var(--space-2)}
+h2{font-size:var(--step-2);margin:var(--space-6) 0 var(--space-2)}
+code{font-family:var(--font-mono);font-size:.86em}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.mark{width:1.1em;height:1.1em;color:var(--brass);vertical-align:-.15em;flex:none}
+.bar{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:var(--space-4);padding:var(--space-2) var(--space-4);background:var(--bg);border-bottom:1px solid var(--rule)}
+.brand{display:flex;align-items:center;gap:.5em;color:var(--heading);text-decoration:none;font-family:var(--font-head);font-weight:var(--head-weight);font-size:var(--step-1)}
+.bar-nav{margin-left:auto;display:flex;gap:var(--space-3);font-family:var(--font-ui);font-size:var(--step--1)}
+.bar-nav a{color:var(--muted);text-decoration:none}.bar-nav a:hover{color:var(--link)}
+.theme{background:none;border:1px solid var(--rule);border-radius:999px;width:2.4rem;height:2.4rem;display:grid;place-items:center;color:var(--text);cursor:pointer}
+.theme svg{width:1.1rem;height:1.1rem}
+main{max-width:var(--max);margin:0 auto;padding:var(--space-5) var(--space-4) var(--space-7)}
+.view[hidden]{display:none}
+.view,h2[id]{scroll-margin-top:5rem}
+.kicker,.card-kicker,.side-stage,.pv-stage{font-family:var(--font-ui);font-size:var(--step--1);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 var(--space-1)}
+.lede{font-size:var(--step-1);max-width:38em;color:var(--text-soft);margin:0 0 var(--space-4)}
+.tools{display:flex;flex-wrap:wrap;gap:var(--space-3);align-items:center;font-family:var(--font-ui)}
+.search{flex:1 1 18rem;display:flex;align-items:center;gap:.5em;border:1px solid var(--rule-strong);background:var(--surface);border-radius:var(--radius);padding:.55em .8em}
+.search svg{width:1.1rem;height:1.1rem;color:var(--muted)}
+.search input{border:0;background:none;font:inherit;color:var(--text);width:100%;outline:none}
+.where{display:flex;align-items:center;gap:.6em;font-size:var(--step--1);color:var(--muted)}
+.where select{font:inherit;font-size:var(--step-0);color:var(--text);background:var(--surface);border:1px solid var(--rule-strong);border-radius:var(--radius);padding:.45em .6em}
+.card{display:block;text-decoration:none;color:var(--text);background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius);padding:var(--space-4);margin:var(--space-5) 0}
+.card:hover{border-color:var(--brass)}
+.card-title{display:block;font-family:var(--font-head);font-size:var(--step-2);color:var(--heading);font-weight:var(--head-weight);margin-bottom:var(--space-1)}
+.card-body{color:var(--text-soft)}
+.section-title{margin-top:var(--space-6)}
+.later{opacity:.42}
+.note{font-family:var(--font-ui);font-size:var(--step--1);color:var(--muted);margin-top:var(--space-5)}
+.layout{display:grid;grid-template-columns:15rem minmax(0,1fr);gap:var(--space-6)}
+.sidebar{position:sticky;top:4.5rem;align-self:start;font-family:var(--font-ui);font-size:var(--step--1)}
+.sidebar ol{list-style:none;margin:var(--space-2) 0 0;padding:0;border-left:1px solid var(--rule)}
+.sidebar li a{display:block;padding:.35em .9em;color:var(--text-soft);text-decoration:none}
+.sidebar li.current a{color:var(--heading);border-left:2px solid var(--brass);margin-left:-1px;font-weight:600}
+.page{max-width:var(--measure)}
+.crumbs{font-family:var(--font-ui);font-size:var(--step--1);color:var(--muted);margin:0 0 var(--space-2)}
+.crumbs a{color:var(--muted)}
+.summary{font-size:var(--step-1);color:var(--text-soft);margin:0 0 var(--space-2)}
+.badges{display:flex;gap:.5em;flex-wrap:wrap;margin:0 0 var(--space-4)}
+.badge,.chip{font-family:var(--font-ui);font-size:.74rem;letter-spacing:.04em;border:1px solid var(--rule-strong);border-radius:999px;padding:.1em .6em;color:var(--muted);white-space:nowrap}
+.chip{border-color:var(--brass);color:var(--text-soft)}
+.glance{background:var(--surface);border:1px solid var(--rule);border-radius:var(--radius);padding:var(--space-3) var(--space-4);margin:0 0 var(--space-4)}
+.glance h2{display:flex;align-items:center;gap:.45em;font-size:var(--step-1);margin:0 0 var(--space-2)}
+.glance ul{margin:0;padding-left:1.1em}.glance li{margin:.25em 0}
+.toc{font-family:var(--font-ui);font-size:var(--step--1);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:var(--space-2) 0;margin:0 0 var(--space-4)}
+.toc h2{font-family:var(--font-ui);font-size:var(--step--1);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 var(--space-1)}
+.toc ol{margin:0;padding-left:1.2em;columns:2}
+.callout{display:flex;gap:var(--space-3);border:1px solid var(--rule);border-left:3px solid var(--callout-edge);background:var(--surface);border-radius:var(--radius);padding:var(--space-3);margin:var(--space-4) 0}
+.callout.online{--callout-edge:var(--sea)}.callout.tip{--callout-edge:var(--brass)}
+.callout .ci svg{width:1.4rem;height:1.4rem;color:var(--callout-edge)}
+.callout p{margin:0}.callout .ct{font-family:var(--font-ui);font-weight:600;font-size:var(--step--1);letter-spacing:.03em;margin-bottom:.2em;color:var(--heading)}
+.table-wrap{overflow-x:auto;margin:var(--space-3) 0}
+table{border-collapse:collapse;width:100%;font-size:var(--step--1)}
+caption{text-align:left;font-family:var(--font-ui);color:var(--muted);padding-bottom:var(--space-2);font-size:var(--step--1)}
+th,td{text-align:left;padding:.6em .7em;border-bottom:1px solid var(--rule);vertical-align:top}
+thead th{font-family:var(--font-ui);font-weight:600;border-bottom:1.5px solid var(--brass);color:var(--heading)}
+tbody th{font-weight:600;color:var(--heading)}
+.fact{color:var(--muted);background:var(--surface-2);border-radius:3px;padding:.05em .3em;font-size:.78em;white-space:normal;overflow-wrap:normal}
+.pv{position:relative;display:inline}
+.pvcard{position:absolute;left:0;top:1.7em;z-index:10;width:19rem;display:none;flex-direction:column;gap:.2em;background:var(--surface);color:var(--text);border:1px solid var(--rule-strong);border-radius:var(--radius);box-shadow:var(--shadow);padding:var(--space-3);font-size:var(--step--1);line-height:1.45}
+.pv:hover .pvcard,.pv:focus-within .pvcard{display:flex}
+.pv-title{font-family:var(--font-head);font-size:var(--step-1);color:var(--heading);font-weight:var(--head-weight)}
+.pv-gate{font-family:var(--font-ui);color:var(--muted);font-size:.8em}
+.next{display:flex;gap:var(--space-4);font-family:var(--font-ui)}
+.sources{margin-top:var(--space-6);border-top:1px solid var(--rule);padding-top:var(--space-3);font-size:var(--step--1)}
+.sources summary{cursor:pointer;font-family:var(--font-ui);font-weight:600;color:var(--heading)}
+.foot{border-top:1px solid var(--rule);padding:var(--space-4);text-align:center;font-family:var(--font-ui);font-size:var(--step--1);color:var(--muted)}
+@media (max-width:600px){main{padding:var(--space-4) var(--space-3) var(--space-6)}#home{padding:var(--space-2)!important}.where{flex:1 1 100%;flex-wrap:wrap}.where select{width:100%}.search{flex-basis:100%}.brand{font-size:var(--step-0)}.hero h1{font-size:2.3rem!important}.pvcard{width:15rem}}
+@media (max-width:820px){.layout{grid-template-columns:1fr}.sidebar{position:static}.toc ol{columns:1}.bar-nav{display:none}}
+
+</style>
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="#home"><svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v7c0 4.5-3.2 7.6-7 9-3.8-1.4-7-4.5-7-9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 10l4 3 4-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>The DFO Online Handbook</span></a>
+  <nav class="bar-nav"><a href="#home">Stages</a><a href="#article">Sample page</a></nav>
+  <button id="theme" class="theme" type="button" aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></button>
+</header>
+<main>
+
+<section id="home" class="view">
+  <div class="hero">
+    <p class="kicker">A player's guide in play order</p>
+    <h1>The DFO Online Handbook</h1>
+    <p class="lede">From creating a character, through Privateer's Hold and your first town, to guilds, Renown, the sea and the late game. Every rule and number is checked against the game's own source.</p>
+    <div class="tools">
+      <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="sr">Search the handbook</span><input type="search" placeholder="Search the handbook"></label>
+      <label class="where"><span>Where are you?</span><select id="where"><option value="">All stages</option><option value="0">0. Before you begin</option><option value="1">1. Creating your character</option><option value="2">2. Privateer&#x27;s Hold</option><option value="3">3. Your first town</option><option value="4">4. Getting around</option><option value="5">5. Finding your feet</option><option value="6">6. Gear and the sea</option><option value="7">7. The wider Bay</option><option value="8">8. Rivals and the Breach</option><option value="9">9. The late game</option></select></label>
+    </div>
+  </div>
+  <a class="start card" href="#article">
+    <span class="card-kicker">Start here</span>
+    <span class="card-title">New to DFO Online? Begin with stage 0.</span>
+    <span class="card-body">Get into the game with an account that keeps your progress, then follow the stages in order.</span>
+  </a>
+  <h2 class="section-title">The stages</h2>
+  <ol class="route"><li class="wp" data-n="0"><a href="#article" class="wp-link">
+<span class="ring">0</span><span class="wp-text"><span class="wp-title">Before you begin</span>
+<span class="wp-gate">None</span></span></a></li><li class="wp" data-n="1"><a href="#article" class="wp-link">
+<span class="ring">I</span><span class="wp-text"><span class="wp-title">Creating your character</span>
+<span class="wp-gate">A new character</span></span></a></li><li class="wp" data-n="2"><a href="#article" class="wp-link">
+<span class="ring">II</span><span class="wp-text"><span class="wp-title">Privateer&#x27;s Hold</span>
+<span class="wp-gate">Entering the world</span></span></a></li><li class="wp" data-n="3"><a href="#article" class="wp-link">
+<span class="ring">III</span><span class="wp-text"><span class="wp-title">Your first town</span>
+<span class="wp-gate">Reaching a settlement</span></span></a></li><li class="wp" data-n="4"><a href="#article" class="wp-link">
+<span class="ring">IV</span><span class="wp-text"><span class="wp-title">Getting around</span>
+<span class="wp-gate">Leaving your first town</span></span></a></li><li class="wp" data-n="5"><a href="#article" class="wp-link">
+<span class="ring">V</span><span class="wp-text"><span class="wp-title">Finding your feet</span>
+<span class="wp-gate">Levels 2-3</span></span></a></li><li class="wp" data-n="6"><a href="#article" class="wp-link">
+<span class="ring">VI</span><span class="wp-text"><span class="wp-title">Gear and the sea</span>
+<span class="wp-gate">Levels 4-5</span></span></a></li><li class="wp" data-n="7"><a href="#article" class="wp-link">
+<span class="ring">VII</span><span class="wp-text"><span class="wp-title">The wider Bay</span>
+<span class="wp-gate">Level 6 · Renown 5</span></span></a></li><li class="wp" data-n="8"><a href="#article" class="wp-link">
+<span class="ring">VIII</span><span class="wp-text"><span class="wp-title">Rivals and the Breach</span>
+<span class="wp-gate">Levels 8-10 · Renown 10</span></span></a></li><li class="wp" data-n="9"><a href="#article" class="wp-link">
+<span class="ring">IX</span><span class="wp-text"><span class="wp-title">The late game</span>
+<span class="wp-gate">Varies</span></span></a></li><li class="wp" data-n=""><a href="#article" class="wp-link">
+<span class="ring">R</span><span class="wp-text"><span class="wp-title">Reference</span>
+<span class="wp-gate">Always available</span></span></a></li></ol>
+  <p class="note">Mockup. Stage titles, gates and promises are from stages.json (commit 0df2d87eb). Illustration slots are placeholders.</p>
+</section>
+
+<section id="article" class="view">
+ <div class="layout">
+  <nav class="sidebar" aria-label="Stage 1 pages">
+    <p class="side-stage"><span class="ring sm">I</span> Creating your character</p>
+    <ol><li><a href="#article">The creation screens, step by step</a></li><li class="current"><a href="#article">Races</a></li><li><a href="#article">Classes</a></li><li><a href="#article">Custom classes</a></li><li><a href="#article">Attributes</a></li><li><a href="#article">Skills</a></li><li><a href="#article">Reflexes, background questions and starting gear</a></li><li><a href="#article">Appearance: Skins and Layered Gearing</a></li><li><a href="#article">Choosing a playstyle</a></li><li><a href="#article">Choices that are hard to undo</a></li></ol>
+  </nav>
+  <article class="page">
+    <p class="crumbs"><a href="#home">Handbook</a> / Creating your character</p>
+    <h1>Choosing a race</h1>
+    <p class="summary">The eight races, what each starts with, and how much the choice matters later.</p>
+    <p class="badges"><span class="badge">Gate: none</span><span class="badge">Verified 0df2d87eb</span></p>
+    <aside class="glance" aria-label="At a glance">
+      <h2><svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v7c0 4.5-3.2 7.6-7 9-3.8-1.4-7-4.5-7-9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 10l4 3 4-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> At a glance</h2>
+      <ul>
+        <li>Each of the eight races changes your starting attributes and sets its own specials and resistances.</li>
+        <li>Compare races against the playstyle you want; there is no single best build.</li>
+        <li>Online, racial combat bonuses come from the online combat rules, not the classic formulas.</li>
+        <li>Some race traits matter more later; those links are marked <span class="chip">later</span>.</li>
+      </ul>
+    </aside>
+    <nav class="toc" aria-label="On this page"><h2>On this page</h2><ol>
+      <li><a href="#races-online">How race works online</a></li><li><a href="#races-table">The eight races</a></li>
+      <li><a href="#races-style">Choosing for your playstyle</a></li><li><a href="#races-mistakes">Common mistakes</a></li>
+      <li><a href="#races-next">Next</a></li></ol></nav>
+    <h2 id="races-online">How race works online</h2>
+    <p>Your race is one of the first choices on the creation screens. It shifts your starting attributes and gives you specials and resistances that stay with your character.</p>
+    <div class="callout online" role="note"><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 2.5 14.4 0 17M12 3.5c-2.5 2.6-2.5 14.4 0 17" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></span><div><p class="ct">Online rule</p>
+      <p>Online, racial combat bonuses are decided by PCAAO, not the classic parts of the combat formulas. The values on this page are read from the online path.</p></div></div>
+    <p>Races pair with classes rather than replacing them. For what each class is good at, see <span class="pv"><a href="#article">Classes</a><span class="pvcard" role="tooltip"><span class="pv-stage">Stage 1 · Creating your character</span><span class="pv-title">Classes</span><span class="pv-body">The eighteen standard classes, what they are good at.</span><span class="pv-gate">Gate: a new character</span></span></span>.</p>
+    <h2 id="races-table">The eight races</h2>
+    <div class="table-wrap"><table>
+      <caption>Starting effects by race. Grey cells are fact placeholders, filled from the registry at build.</caption>
+      <thead><tr><th scope="col">Race</th><th scope="col">Attribute modifiers</th><th scope="col">Specials</th><th scope="col">Resistances</th></tr></thead>
+      <tbody><tr><th scope="row">Breton</th><td><code class="fact" title="Placeholder for {{fact races.breton.attrs}}, filled from the fact registry at build">breton.attrs</code></td><td><code class="fact" title="Placeholder for {{fact races.breton.specials}}, filled from the fact registry at build">breton.specials</code></td><td><code class="fact" title="Placeholder for {{fact races.breton.resist}}, filled from the fact registry at build">breton.resist</code></td></tr><tr><th scope="row">Redguard</th><td><code class="fact" title="Placeholder for {{fact races.redguard.attrs}}, filled from the fact registry at build">redguard.attrs</code></td><td><code class="fact" title="Placeholder for {{fact races.redguard.specials}}, filled from the fact registry at build">redguard.specials</code></td><td><code class="fact" title="Placeholder for {{fact races.redguard.resist}}, filled from the fact registry at build">redguard.resist</code></td></tr><tr><th scope="row">Nord</th><td><code class="fact" title="Placeholder for {{fact races.nord.attrs}}, filled from the fact registry at build">nord.attrs</code></td><td><code class="fact" title="Placeholder for {{fact races.nord.specials}}, filled from the fact registry at build">nord.specials</code></td><td><code class="fact" title="Placeholder for {{fact races.nord.resist}}, filled from the fact registry at build">nord.resist</code></td></tr><tr><th scope="row">Dark Elf</th><td><code class="fact" title="Placeholder for {{fact races.darkelf.attrs}}, filled from the fact registry at build">darkelf.attrs</code></td><td><code class="fact" title="Placeholder for {{fact races.darkelf.specials}}, filled from the fact registry at build">darkelf.specials</code></td><td><code class="fact" title="Placeholder for {{fact races.darkelf.resist}}, filled from the fact registry at build">darkelf.resist</code></td></tr><tr><th scope="row">High Elf</th><td><code class="fact" title="Placeholder for {{fact races.highelf.attrs}}, filled from the fact registry at build">highelf.attrs</code></td><td><code class="fact" title="Placeholder for {{fact races.highelf.specials}}, filled from the fact registry at build">highelf.specials</code></td><td><code class="fact" title="Placeholder for {{fact races.highelf.resist}}, filled from the fact registry at build">highelf.resist</code></td></tr><tr><th scope="row">Wood Elf</th><td><code class="fact" title="Placeholder for {{fact races.woodelf.attrs}}, filled from the fact registry at build">woodelf.attrs</code></td><td><code class="fact" title="Placeholder for {{fact races.woodelf.specials}}, filled from the fact registry at build">woodelf.specials</code></td><td><code class="fact" title="Placeholder for {{fact races.woodelf.resist}}, filled from the fact registry at build">woodelf.resist</code></td></tr><tr><th scope="row">Khajiit</th><td><code class="fact" title="Placeholder for {{fact races.khajiit.attrs}}, filled from the fact registry at build">khajiit.attrs</code></td><td><code class="fact" title="Placeholder for {{fact races.khajiit.specials}}, filled from the fact registry at build">khajiit.specials</code></td><td><code class="fact" title="Placeholder for {{fact races.khajiit.resist}}, filled from the fact registry at build">khajiit.resist</code></td></tr><tr><th scope="row">Argonian</th><td><code class="fact" title="Placeholder for {{fact races.argonian.attrs}}, filled from the fact registry at build">argonian.attrs</code></td><td><code class="fact" title="Placeholder for {{fact races.argonian.specials}}, filled from the fact registry at build">argonian.specials</code></td><td><code class="fact" title="Placeholder for {{fact races.argonian.resist}}, filled from the fact registry at build">argonian.resist</code></td></tr></tbody></table></div>
+    <h2 id="races-style">Choosing for your playstyle</h2>
+    <p>A fighter values different starting attributes than a caster, and a thief values different specials again. Read the table against the playstyle you want, not against a single number.</p>
+    <div class="callout tip" role="note"><span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><p class="ct">Read forward before you commit</p>
+      <p>Some choices made here matter much later, for example in <span class="pv"><a href="#article">seasonal festival gear</a> <span class="chip">later</span><span class="pvcard" role="tooltip"><span class="pv-stage">Stage 7 · The wider Bay</span><span class="pv-title">World events and their clock</span><span class="pv-body">Raids, Motherlodes, Starfall and seasonal festivals.</span><span class="pv-gate">Gate: Level 6 · Renown 5</span></span></span>.</p></div></div>
+    <h2 id="races-mistakes">Common mistakes</h2>
+    <p>Picking a race for one figure in the table without reading its resistances.</p>
+    <h2 id="races-next">Next</h2>
+    <p class="next"><a href="#article">Classes</a> <a href="#article">Custom classes</a></p>
+    <details class="sources"><summary>Sources</summary><ul>
+      <li><code>src/combat/pcaao.js</code>: racial and expertise bonuses online</li>
+      <li><code>src/systems/online/onlineLane.js</code> <code>ONLINE_ROOM_MOD_KEYS</code>: PCAAO forced online</li>
+      <li>Race table: fact registry entries <code>races.*</code> at 0df2d87eb</li></ul></details>
+    <p class="note">Mockup copy shows layout only. It has not been checked against the source and must not be published as written.</p>
+  </article>
+ </div>
+</section>
+</main>
+<footer class="foot"><p>Direction A: Field Atlas. Design mockup for the DFO Online Handbook. Original artwork and ornament only; no game assets.</p></footer>
+<script>
+(function(){var r=document.documentElement,b=document.getElementById('theme');
+var s=localStorage.getItem('dfo-theme');if(s)r.dataset.theme=s;
+b.addEventListener('click',function(){var t=(r.dataset.theme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))==='dark'?'light':'dark';r.dataset.theme=t;localStorage.setItem('dfo-theme',t);});
+var w=document.getElementById('where');w.addEventListener('change',function(){var v=w.value===''?99:+w.value;
+document.querySelectorAll('[data-n]').forEach(function(el){var n=el.dataset.n===''?-1:+el.dataset.n;el.classList.toggle('later',n>v);});});
+function show(){var h=location.hash==='#article'||/^#races/.test(location.hash)?'article':'home';
+document.querySelectorAll('.view').forEach(function(v){v.hidden=v.id!==h;});if(location.hash==='#home'||location.hash==='#article')scrollTo(0,0);}
+addEventListener('hashchange',show);show();})();
+</script>
+</body>
+</html>

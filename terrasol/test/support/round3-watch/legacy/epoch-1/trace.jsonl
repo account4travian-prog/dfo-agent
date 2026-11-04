@@ -1,0 +1,5 @@
+{"kind":"epoch-start","at":"2026-10-27T09:31:49.499Z"}
+{"kind":"model-request","at":"2026-10-27T09:31:50.149Z","role":"sol"}
+{"kind":"model-request","at":"2026-10-27T09:31:50.151Z","role":"terra"}
+{"kind":"model-response","at":"2026-10-27T09:31:53.798Z","role":"terra","usage":{"input_tokens":14410,"cached_input_tokens":0,"output_tokens":92}}
+{"kind":"action-result","at":"2026-10-27T09:31:53.949Z","issued":true}

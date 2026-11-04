@@ -1,0 +1,8 @@
+{
+  "foe": "Rat",
+  "distanceM": 2.1,
+  "biting": true,
+  "reachM": 2,
+  "closeM": 1.3,
+  "doorDistanceM": 1.5
+}

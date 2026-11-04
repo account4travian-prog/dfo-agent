@@ -1,0 +1,8 @@
+# Fight-close report
+
+- Added close-in combat at 1.3 m (or configured reach when shorter). During a visible foe approach, door ray hazards and mapped door cells no longer block the step; walls, water, ledges and drops still do. If a real obstacle blocks the step, the Body may swing within reach plus 0.3 m. The Path A per-tick selected-target, frame, freshness and health-floor guard, latch, and 750 ms occlusion grace remain in place.
+- Added the trial 13 fixture (biting Rat at 2.1 m, 2 m reach, doorway at 1.5 m) and regressions for visible and remembered door cells and terrain stops. The trial regression failed before the Body fix because it stayed at the doorway edge; it passes after the fix. Updated tests whose expectations changed from swinging at 1.5 m to closing before swinging.
+- No executor change was needed: its existing combat receipt records dispatch and leaves `killVerified` false; the intent-executor regression confirms attack dispatch is not a kill. Updated the native benchmark registration and vendored Body SHA-256 in `docs/BODY-PORT.md` to `4ae8a2f222eeb3c17b3ee7b83512e13b8d15a4317daa2fd625d7909776fd4d0a`.
+- `node tools/native-benchmark.mjs`: 107 passed, 0 failed. `node --test test/*.test.mjs`: 224 passed, 5 failed; all five are the documented `native-bridge.test.mjs` checks that require the ignored `engine/` checkout, which is absent in this worktree.
+- Requests for files outside this job's ownership: none.
+- A live run is still needed to verify actual doorway movement, game collision behavior, swing timing and damage against a rat, and that the fight guard behaves as expected with live observations.

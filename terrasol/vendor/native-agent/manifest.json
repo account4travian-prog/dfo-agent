@@ -1,0 +1,61 @@
+{
+  "origin": "upstream/dfo-agent/src/agent at legacy engine 5ff039c30",
+  "license": "See vendor/LICENSE.dfo",
+  "engine": "e4f09316684d78d194553d3c94cbaa9bbdaa9b7b",
+  "engine_pin_file": "engine-pin.json",
+  "changes": "Engine import paths updated; online restriction removed per current authorization; prior bridge releases held inputs on replacement. World installation and frame hooks adapted separately. Frame-scoped foe IDs are allocated only after visibility succeeds. Fresh camera scan requests bypass idle freshness gaps. Path A: visible thing/person handles, central motor placement invalidation, observed pose discontinuity guard, and managed host upgrades.",
+  "files": {
+    "agentBridge.js": {
+      "source_sha256": "bb86e3b3f6abc873f165086a86d71089121985ae9a18895ca6bb71184625bf36",
+      "ported_sha256": "46c4b57fae27b0b9c39901a02b6efa713cd3373f4325685581b964a9c7312f2e"
+    },
+    "agentFloor.js": {
+      "source_sha256": "b92ba4594d16eb21898dd3fb46d53a18b04eccb9a3146bcd9526b67319db4c0b",
+      "ported_sha256": "b92ba4594d16eb21898dd3fb46d53a18b04eccb9a3146bcd9526b67319db4c0b"
+    },
+    "agentJourney.js": {
+      "source_sha256": "ee75ff0d4b5bfd53b275a17c74f12962e0b40c2dd7d099ffbed294ae99983094",
+      "ported_sha256": "ee75ff0d4b5bfd53b275a17c74f12962e0b40c2dd7d099ffbed294ae99983094"
+    },
+    "agentJourneyEvents.js": {
+      "source_sha256": "45ce25a47e6fa6a7426536502c8b060fc9b933ec96eb32fb56d1c4fbb972303d",
+      "ported_sha256": "45ce25a47e6fa6a7426536502c8b060fc9b933ec96eb32fb56d1c4fbb972303d"
+    },
+    "agentLanding.js": {
+      "source_sha256": "bfa705b6425be60f163a4d9f1f58145c81c9b01e5a6462e6b4c9485b17828f71",
+      "ported_sha256": "8ebebe682b8f52407048b221bde3575bc129c50ee74029948ea57274cb958ab9"
+    },
+    "agentMap.js": {
+      "source_sha256": "6bd70a12bafa361e7a8d3f7dce532b88b590a8efa09dc57bdf0d68d8f563e6ff",
+      "ported_sha256": "1708f0aecfc74a65415c7d953d843102db968f50212658942f6a2bf03d2ce9aa"
+    },
+    "agentMenus.js": {
+      "source_sha256": "f6eea603956d342cacefb57b066b7d3ff81cd39980115ec8a90f37f4efaf394f",
+      "ported_sha256": "ce8f642cad9d62bfd51330fbbcccda992e99f99eed28e2e3d8695d459e6699b5"
+    },
+    "agentProvenance.js": {
+      "source_sha256": "09ca027d2505566f45f9a89bb264b2b63338f230ca6116ae1acda04bce87746e",
+      "ported_sha256": "09ca027d2505566f45f9a89bb264b2b63338f230ca6116ae1acda04bce87746e"
+    },
+    "agentQuestReceipts.js": {
+      "source_sha256": "6bb1ebf4037b5ea4d9557dde6ec3fc8af8f7b7bb26359c59d4f14697b0d8b02d",
+      "ported_sha256": "6bb1ebf4037b5ea4d9557dde6ec3fc8af8f7b7bb26359c59d4f14697b0d8b02d"
+    },
+    "agentScan.js": {
+      "source_sha256": "ce0b4577bc43151d912ba9d33b1be9bbfc3ad239a2ed872edee076d492742752",
+      "ported_sha256": "a1e571d5a6badb99baba9f21197b8994c0252f9e6a68ff5c726571e81dff6f90"
+    },
+    "agentSenses.js": {
+      "source_sha256": "5514abcaa36d06552a7aac080fd7b0f8bcfb6338d43311c806a9e80af5f54c39",
+      "ported_sha256": "1eaa2030a924ae0c4680cc9d37a866476751927c70255491afb5b8f09ae6f9d1"
+    },
+    "agentTownMap.js": {
+      "source_sha256": "f55aa6b4daa08c3cdd81ff3c7db4a0ffb5d4dcff4c01931adb2f848421aac4c2",
+      "ported_sha256": "3991c73ecae4b3ce7ade7c85062caad24d0673d364558853d4eb6d8f6e7f5ae9"
+    },
+    "agentWindows.js": {
+      "source_sha256": "13e6d9d3de8dc3725baf506d735b9aa0677958a850f8ef5e01cc45b01efb159f",
+      "ported_sha256": "13e6d9d3de8dc3725baf506d735b9aa0677958a850f8ef5e01cc45b01efb159f"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+name = "dfo-handbook-assistant"
+main = "src/index.js"
+compatibility_date = "2026-09-25"
+workers_dev = false
+
+# The Worker is reachable only through the Access-protected handbook hostname and this route.
+routes = [
+  { pattern = "handbook.wardenlog.org/api/*", zone_name = "wardenlog.org" }
+]
+
+[ai]
+binding = "AI"
+
+[[kv_namespaces]]
+binding = "ASSISTANT_KV"
+id = "<ASSISTANT_KV_NAMESPACE_ID>"
+
+[vars]
+MONTHLY_BUDGET_USD = "5"
+BUDGET_ENFORCE = "true"
+# Keep quotas off during owner testing; set to true and tune FREE_DAILY/FREE_MONTHLY before opening beyond testers.
+QUOTA_ENFORCE = "false"
+FREE_DAILY = "20"
+FREE_MONTHLY = "200"
+ALLOW_ESCALATION = "false"
+
+[observability]
+enabled = true

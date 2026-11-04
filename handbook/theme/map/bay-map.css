@@ -1,0 +1,524 @@
+.world-map{
+  --bg: #edf0ef;
+  --fg: #24343e;
+  --surface: #fafcfb;
+  --panel: #e2e8e7;
+  --muted: #50636a;
+  --line: #a8b8bb;
+  --accent: #715618;
+  --sea: #286b68;
+  --focus: #076f83;
+  --map-road: #8a501e;
+  --map-water: #d0e4e8;
+  --map-land: #d8ddc9;
+  --map-land-alt: #e0dfca;
+  --map-low: #175747;
+  --map-mid: #76510b;
+  --map-high: #923c1a;
+  --map-deadly: #861b4b;
+  --map-ring1:#e9b4aa;
+  --map-ring2:#d99392;
+  --map-ring3:#c97284;
+  --map-ring4:#ad536d;
+  --map-jungle: #8dbb97;
+  --map-halo: #fafcfb;
+  color-scheme: light
+}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .world-map{
+    --bg: #17252d;
+    --fg: #e3e9e6;
+    --surface: #20323b;
+    --panel: #293f49;
+    --muted: #b1c3c7;
+    --line: #526c76;
+    --accent: #dbc58d;
+    --sea: #89c8bd;
+    --focus: #91d9e6;
+    --map-road: #e7b779;
+    --map-water: #182f40;
+    --map-land: #43554b;
+    --map-land-alt: #4c5b4d;
+    --map-low: #a4dbc4;
+    --map-mid: #f0ce80;
+    --map-high: #eea982;
+    --map-deadly: #f59fbe;
+    --map-ring1:#8b5658;
+    --map-ring2:#a14e5c;
+    --map-ring3:#b44461;
+    --map-ring4:#cc3e6b;
+    --map-jungle: #427e66;
+    --map-halo: #17252d;
+    color-scheme: dark
+  }
+}
+:root[data-theme="dark"] .world-map{
+  --bg: #17252d;
+  --fg: #e3e9e6;
+  --surface: #20323b;
+  --panel: #293f49;
+  --muted: #b1c3c7;
+  --line: #526c76;
+  --accent: #dbc58d;
+  --sea: #89c8bd;
+  --focus: #91d9e6;
+  --map-road: #e7b779;
+  --map-water: #182f40;
+  --map-land: #43554b;
+  --map-land-alt: #4c5b4d;
+  --map-low: #a4dbc4;
+  --map-mid: #f0ce80;
+  --map-high: #eea982;
+  --map-deadly: #f59fbe;
+  --map-ring1:#8b5658;
+  --map-ring2:#a14e5c;
+  --map-ring3:#b44461;
+  --map-ring4:#cc3e6b;
+  --map-jungle: #427e66;
+  --map-halo: #17252d;
+  color-scheme: dark
+}
+.world-map,.world-map *{
+  box-sizing: border-box
+}
+.world-map{
+  font: 15px/1.45 'Segoe UI',sans-serif;
+  color: var(--fg);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  max-width: 1160px;
+  min-width: 0;
+  margin: 16px auto
+}
+.world-map h2{
+  font-size: 26px;
+  line-height: 1.1;
+  margin: 0
+}
+.map-head{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap
+}
+.map-head p{
+  margin: 6px 0 0;
+  color: var(--muted)
+}
+.world-map button,.world-map input{
+  font: inherit;
+  color: var(--fg);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  min-height: 44px
+}
+.world-map button{
+  padding: 8px 13px;
+  cursor: pointer
+}
+.world-map :focus-visible{
+  outline: 3px solid var(--focus);
+  outline-offset: 2px
+}
+.map-search{
+  flex: 1;
+  max-width: 390px;
+  min-width: 180px
+}
+.map-search input{
+  width: 100%;
+  padding: 10px
+}
+.map-results{
+  display: grid;
+  gap: 3px;
+  max-height: 240px;
+  overflow: auto;
+  margin-top: 4px
+}
+.map-results:empty{
+  display: none
+}
+.map-results button{
+  text-align: left;
+  overflow-wrap: anywhere
+}
+.map-services{
+  padding: 14px 20px;
+  border-top: 1px solid var(--line)
+}
+.map-services p{
+  font-size: 14px;
+  margin: 8px 0;
+  max-width: none
+}
+.map-chips,.map-near{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: center
+}
+.map-chips [aria-pressed="true"]{
+  background: var(--accent);
+  color: var(--surface)
+}
+.world-map select{
+  font: inherit;
+  max-width: 100%;
+  min-height: 44px;
+  background: var(--surface);
+  color: var(--fg);
+  border: 1px solid var(--line)
+}
+.map-nearest-results{
+  display: grid;
+  gap: 5px
+}
+.map-nearest-results button{
+  text-align: left
+}
+.map-near{
+  margin-top: 14px
+}
+.map-near label{
+  display: flex;
+  gap: 8px;
+  align-items: center
+}
+.map-stage{
+  position: relative;
+  background: var(--map-water);
+  height: clamp(370px,62vw,600px);
+  overflow: hidden
+}
+.map-stage canvas{
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: grab
+}
+.map-stage canvas:active{
+  cursor: grabbing
+}
+.map-tools{
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap
+}
+.map-tools button{
+  background: var(--surface);
+  font-weight: 650
+}
+.map-scale{
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  background: var(--surface);
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 12px;
+  pointer-events: none
+}
+.map-detail{
+  border-top: 1px solid var(--line);
+  padding: 14px 20px;
+  min-height: 88px;
+  background: var(--panel);
+  overflow-wrap: anywhere
+}
+.map-detail strong{
+  font-size: 18px
+}
+.map-detail p{
+  margin: 4px 0
+}
+.map-layers{
+  padding: 12px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 18px;
+  border-top: 1px solid var(--line)
+}
+.map-layers label{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px
+}
+.map-layers input{
+  min-height: 20px;
+  width: 19px;
+  height: 19px;
+  accent-color: var(--sea)
+}
+.map-legend{
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  font-size: 13px;
+  color: var(--muted)
+}
+.map-legend span{
+  display: inline-flex;
+  align-items: center;
+  gap: 5px
+}
+.map-legend svg{
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5
+}
+.map-foot{
+  padding: 0 20px 16px;
+  font-size: 12px;
+  color: var(--muted)
+}
+.map-foot p{
+  margin: 7px 0
+}
+.map-foot a{
+  color: var(--sea)
+}
+.map-low{
+  color: var(--map-low)
+}
+.map-mid{
+  color: var(--map-mid)
+}
+.map-high{
+  color: var(--map-high)
+}
+.map-deadly{
+  color: var(--map-deadly)
+}
+.map-rings{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 0 20px 12px;
+  font-size: 13px
+}
+.map-rings i{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-right: 4px;
+  background: var(--map-ring1)
+}
+.map-rings span:nth-child(2) i{
+  background: var(--map-ring2)
+}
+.map-rings span:nth-child(3) i{
+  background: var(--map-ring3)
+}
+.map-rings span:nth-child(4) i{
+  background: var(--map-ring4)
+}
+.map-hover{
+  position: fixed;
+  z-index: 90;
+  pointer-events: none;
+  width: min(370px,calc(100vw - 32px));
+  background: var(--surface);
+  color: var(--fg);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--sea);
+  box-shadow: 0 10px 35px #0003;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.45
+}
+.map-hover[hidden]{
+  display: none
+}
+.map-hover strong{
+  display: block;
+  color: var(--accent);
+  font-size: 20px;
+  margin-bottom: 7px
+}
+.map-hover p{
+  margin: 0
+}
+@media(max-width:500px){
+  .map-head{
+    padding: 14px
+  }
+  .map-search{
+    max-width: none;
+    flex-basis: 100%
+  }
+  .map-stage{
+    height: 440px
+  }
+  .map-layers{
+    padding: 10px 14px;
+    gap: 5px 12px;
+    font-size: 13px
+  }
+  .map-detail{
+    padding: 12px 14px
+  }
+  .map-foot,.map-legend{
+    padding-left: 14px;
+    padding-right: 14px
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .world-map *{
+    animation: none!important;
+    transition: none!important;
+    scroll-behavior: auto!important
+  }
+}
+
+.map-path-key { display: inline-block; width: 22px; border-top: 2px solid var(--map-road) }
+.map-path-tracks { border-top-width: 1px; border-top-style: dashed }
+.map-path-rivers { border-color: var(--sea); border-top-width: 3px }
+.map-path-streams { border-color: var(--sea); border-top-width: 1px }
+
+.map-location{
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line)
+}
+.map-pin-controls{
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin-top: 8px
+}
+.map-pin-controls [aria-pressed="true"],.map-nearest-results [aria-pressed="true"]{
+  border-color: var(--focus);
+  box-shadow: inset 0 0 0 1px var(--focus)
+}
+.world-map button:disabled{
+  opacity: .6;
+  cursor: default
+}
+.map-stage canvas.map-dropping-pin{
+  cursor: crosshair
+}
+.world-map .map-player-pin{
+  position: absolute;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  transform: translate(-50%, -100%);
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  color: var(--focus);
+  touch-action: none;
+  cursor: move
+}
+.map-player-pin[hidden]{
+  display: none
+}
+.map-player-pin svg{
+  display: block;
+  width: 36px;
+  height: 44px;
+  margin: auto;
+  overflow: visible;
+  fill: var(--focus);
+  stroke: var(--map-halo);
+  stroke-width: 3
+}
+.map-player-pin circle{
+  fill: var(--map-halo);
+  stroke: none
+}
+.map-pin-label{
+  position: absolute;
+  bottom: 46px;
+  left: calc(50% + var(--pin-label-offset, 0px));
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 2px 6px;
+  border: 1px solid var(--focus);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--fg);
+  font-size: 13px;
+  pointer-events: none
+}
+.map-pin-quiet .map-pin-label{
+  display: none
+}
+.world-map .map-player-pin.map-pin-at-top{
+  transform: translate(-50%, 0)
+}
+.map-pin-at-top svg{
+  transform: rotate(180deg)
+}
+.map-pin-at-top .map-pin-label{
+  bottom: auto;
+  top: 46px
+}
+.map-nearest-results button{
+  overflow-wrap: anywhere
+}
+.map-detail button{
+  margin: 6px 7px 0 0
+}
+
+/* One finder: place a pin, then type a service instead of choosing among filter chips. */
+.map-finder{
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line)
+}
+.map-finder label{
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600
+}
+.map-find-row{
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  align-items: center
+}
+.map-find-row input{
+  flex: 1 1 18rem;
+  min-width: 0;
+  padding: 10px
+}
+.map-find-status{
+  min-height: 1.4em;
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: var(--muted)
+}
+.map-finder + .map-nearest-results{
+  margin-top: 10px
+}
+@media (max-width: 560px){
+  .map-find-row input{flex-basis: 100%}
+}
+.map-sources{
+  margin: 10px 0;
+  font-size: 13px;
+  color: var(--muted)
+}
+.map-sources summary{
+  cursor: pointer;
+  font-weight: 600
+}
+.map-sources p{
+  margin: 6px 0 0
+}

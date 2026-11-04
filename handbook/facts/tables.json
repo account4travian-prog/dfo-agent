@@ -1,0 +1,886 @@
+{
+  "commit": "e4f093166",
+  "extractedAt": "2026-10-24T10:38:26.855Z",
+  "tables": {
+    "classes.skills": [
+      [
+        "Mage",
+        "Destruction, Alteration, Mysticism",
+        "Illusion, Thaumaturgy, Restoration",
+        "Medical, Short Blade, Blunt Weapon, Dodging, Etiquette, Mercantile"
+      ],
+      [
+        "Spellsword",
+        "Long Blade, Restoration, Alteration",
+        "Axe, Blunt Weapon, Destruction",
+        "Illusion, Thaumaturgy, Mysticism, Short Blade, Dodging, Archery"
+      ],
+      [
+        "Battlemage",
+        "Destruction, Long Blade, Axe",
+        "Thaumaturgy, Alteration, Restoration",
+        "Illusion, Mysticism, Dodging, Archery, Short Blade, Blunt Weapon"
+      ],
+      [
+        "Sorcerer",
+        "Destruction, Mysticism, Alteration",
+        "Thaumaturgy, Illusion, Blunt Weapon",
+        "Restoration, Short Blade, Dodging, Medical, Mercantile, Streetwise"
+      ],
+      [
+        "Healer",
+        "Restoration, Medical, Dodging",
+        "Blunt Weapon, Alteration, Mysticism",
+        "Thaumaturgy, Destruction, Illusion, Etiquette, Streetwise, Short Blade"
+      ],
+      [
+        "Nightblade",
+        "Illusion, Stealth, Short Blade",
+        "Destruction, Backstabbing, Dodging",
+        "Alteration, Thaumaturgy, Critical Strike, Lockpicking, Restoration, Mysticism"
+      ],
+      [
+        "Bard",
+        "Etiquette, Streetwise, Short Blade",
+        "Illusion, Mercantile, Stealth",
+        "Pickpocket, Lockpicking, Alteration, Restoration, Destruction, Archery"
+      ],
+      [
+        "Burglar",
+        "Lockpicking, Stealth, Short Blade",
+        "Climbing, Backstabbing, Dodging",
+        "Critical Strike, Pickpocket, Mercantile, Streetwise, Archery, Running"
+      ],
+      [
+        "Rogue",
+        "Long Blade, Stealth, Dodging",
+        "Pickpocket, Backstabbing, Streetwise",
+        "Critical Strike, Short Blade, Lockpicking, Archery, Blunt Weapon, Running"
+      ],
+      [
+        "Acrobat",
+        "Dodging, Jumping, Short Blade",
+        "Running, Archery, Stealth",
+        "Climbing, Hand-to-Hand, Critical Strike, Backstabbing, Pickpocket, Swimming"
+      ],
+      [
+        "Thief",
+        "Pickpocket, Stealth, Short Blade",
+        "Backstabbing, Lockpicking, Dodging",
+        "Critical Strike, Climbing, Running, Streetwise, Mercantile, Archery"
+      ],
+      [
+        "Assassin",
+        "Short Blade, Critical Strike, Stealth",
+        "Backstabbing, Long Blade, Archery",
+        "Dodging, Lockpicking, Climbing, Pickpocket, Streetwise, Blunt Weapon"
+      ],
+      [
+        "Monk",
+        "Hand-to-Hand, Critical Strike, Dodging",
+        "Medical, Blunt Weapon, Running",
+        "Archery, Short Blade, Stealth, Jumping, Climbing, Swimming"
+      ],
+      [
+        "Archer",
+        "Archery, Dodging, Critical Strike",
+        "Short Blade, Long Blade, Stealth",
+        "Axe, Blunt Weapon, Hand-to-Hand, Running, Climbing, Swimming"
+      ],
+      [
+        "Ranger",
+        "Archery, Long Blade, Stealth",
+        "Axe, Critical Strike, Dodging",
+        "Climbing, Swimming, Running, Medical, Short Blade, Blunt Weapon"
+      ],
+      [
+        "Barbarian",
+        "Axe, Blunt Weapon, Critical Strike",
+        "Long Blade, Dodging, Running",
+        "Medical, Climbing, Jumping, Swimming, Archery, Hand-to-Hand"
+      ],
+      [
+        "Warrior",
+        "Long Blade, Axe, Critical Strike",
+        "Blunt Weapon, Archery, Dodging",
+        "Short Blade, Hand-to-Hand, Medical, Climbing, Running, Swimming"
+      ],
+      [
+        "Knight",
+        "Long Blade, Blunt Weapon, Etiquette",
+        "Axe, Critical Strike, Medical",
+        "Archery, Short Blade, Dodging, Mercantile, Running, Swimming"
+      ]
+    ],
+    "online.ruleset": [
+      [
+        "Dynamic Skies",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "World Tooltips",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Readied Spellcasting Hands",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Seasons of the Iliac Bay",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Low Poly Trees",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Basic Roads",
+        "Mod",
+        "Forced for the world",
+        "Enabled = true; SmoothRoads = true; RiversAndStreams = true"
+      ],
+      [
+        "World of Daggerfall",
+        "Mod",
+        "Forced for the world",
+        "Enabled = true; Mountains = false"
+      ],
+      [
+        "Aquatic Sprites",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Detailed Ships",
+        "Mod",
+        "Forced for the world",
+        "Enabled = true"
+      ],
+      [
+        "Beautiful Villages of Daggerfall",
+        "Mod",
+        "Forced for the world",
+        "Enabled = true"
+      ],
+      [
+        "Beautiful Cities of Daggerfall",
+        "Mod",
+        "Forced for the world",
+        "Enabled = true"
+      ],
+      [
+        "Warm Ashes - Ships",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "World Events - Raiding Parties",
+        "Mod",
+        "Forced for the world",
+        "Enabled = true"
+      ],
+      [
+        "Foraging",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Iliac Puddle No More",
+        "Mod",
+        "Forced for the world",
+        "Enabled = true; General.WaterDepth = 250; General.SpawnUnderwaterEnemies = true; General.EnemyFrequency = 0.3; General.MaxLiveEnemies = 32; General.SeafloorLootRate = 0.5; General.MaxLiveLootObjects = 192; General.TreasureClusterRate = 0.3; General.MaxLiveTreasureClusters = 12; General.TreasureCove = false; General.SwimSpeedMultiplier = 1; General.EnableSwimStroke = true; General.ArgonianInfiniteBreath = true"
+      ],
+      [
+        "There’s a Hole in the Bottom of the Ocean",
+        "Mod",
+        "Forced for the world",
+        "Enabled = true; General.PitSpawnRate = 0.5; General.SeafloorHoleSize = 0.5"
+      ],
+      [
+        "Come Sail Away",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Meaner Monsters",
+        "Mod",
+        "Balance-locked at defaults",
+        "Enabled = true"
+      ],
+      [
+        "Physical Combat And Armor Overhaul",
+        "Mod",
+        "Balance-locked at defaults",
+        "Enabled = true; equipmentDamageEnhanced = false; fadingEnchantedItems = false; fixedStrengthDamageModifier = true; armorHitFormulaRedone = true; criticalStrikesIncreaseDamage = true; conditionBasedEffectiveness = true; softMaterialRequirements = true"
+      ],
+      [
+        "Unleveled Loot",
+        "Mod",
+        "Balance-locked at defaults",
+        "Enabled = true; Iron = 0; Steel = 1; Silver = 2; Elven = 3; Dwarven = 4; Mithril = 5; Adamantium = 6; Ebony = 7; Orcish = 8; Daedric = 9"
+      ],
+      [
+        "Diverse Weapons",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Roleplay & Realism: Items",
+        "Mod",
+        "Balance-locked at defaults",
+        "Enabled = true; lootRebalance = true; bandaging = true; conditionBasedPrices = true; storeQualityItemCondition = true; realisticEnemyEquipment = true; skillBasedStartingEquipment = true; skillBasedStartingSpells = true; weaponBalance = true; newWeapons = true; newArmor = true; alchemistPotions = true"
+      ],
+      [
+        "Roleplay & Realism",
+        "Mod",
+        "Balance-locked at defaults",
+        "Enabled = true; bedSleeping = true; advancedArchery = true; encumbranceEffects = true; bandaging = true; shipPorts = false; underworldExpulsion = true; climbingRestriction = true; weaponSpeed = true; weaponMaterials = true; equipDamage = false; enemyAppearance = true; purificationPotion = true; autoExtinguishLight = true; classicStrengthDamageBonus = false; loanAmountPerLevel = 4; EnhancedRiding.enhancedRiding = true; EnhancedRiding.RealisticMovement = true; EnhancedRiding.followTerrainEnabled = true; EnhancedRiding.followTerrainSoftenFactor = 8; EnhancedRiding.GallopingInTowns = true; EnhancedRiding.TrampleCivilians = true; RefinedTraining.refinedTraining = true; RefinedTraining.variableTrainingPrice = true; RefinedTraining.intensiveTraining = false"
+      ],
+      [
+        "Shield Widget",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Weapon Widget",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Handheld Torches",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Ambient Text",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Eye Of The Beholder",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Immersive Footsteps",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Better Ambience",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Oblivion Remaster Like Leveling",
+        "Mod",
+        "Balance-locked at defaults",
+        "attributePoints = 12; maxUpdatableAttribute = 3; allowLuckIncrease = true; luckIncreaseCost = 4; primarySkillsImpact = 8; majorSkillsImpact = 8; minorSkillsImpact = 6; miscSkillsImpact = 2"
+      ],
+      [
+        "Travel Options",
+        "Mod",
+        "Forced for the world",
+        "Enabled = true; CautiousTravel.PlayerControlledCautiousTravel = true; StopAtInnsTravel.PlayerControlledInnsTravel = true; ShipTravel.OnlyFromPorts = true"
+      ],
+      [
+        "Immersive Travel",
+        "Mod",
+        "Balance-locked at defaults",
+        "Enabled = true; General.DisableNormalTravel = false; General.DailyCarriageFee = 1; General.RegionLockedCarriages = false; ShipTravel.DisableShipTravelOutsideDocks = true; ShipTravel.DailyShipCost = 15; ShipTravel.DailyCaptainFee = 10; ShipTravel.LimitedRangeInSmallDocks = true; AllowedDestinations.Cities = true; AllowedDestinations.Covens = false; AllowedDestinations.Dungeons = false; AllowedDestinations.Graveyards = false; AllowedDestinations.Farms = false; AllowedDestinations.Hamlets = true; AllowedDestinations.Homes = false; AllowedDestinations.Temples = false; AllowedDestinations.Taverns = false; AllowedDestinations.Villages = true"
+      ],
+      [
+        "Physical Items",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Heat Haze",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Windfall",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Snowfall",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Horse Cart and Cargo",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Project Legacy",
+        "Mod",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Daggerfall Enemy Expansion",
+        "Mod",
+        "Balance-locked at defaults",
+        "Enabled = true; Cheat.DisableTrollRespawn = false"
+      ],
+      [
+        "Smaller dungeons",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Medium dungeons",
+        "Port feature",
+        "Forced for the world",
+        "mediumDungeons = false"
+      ],
+      [
+        "Dungeon sizes as online",
+        "Port feature",
+        "Forced for the world",
+        "worldDungeonSizes = true"
+      ],
+      [
+        "Horse care",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Wagon upkeep",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Land view distance",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Enhanced environments",
+        "Port feature",
+        "Forced for the world",
+        "enhancedEnvironments = true"
+      ],
+      [
+        "Enhanced AI",
+        "Port feature",
+        "Forced for the world",
+        "enhancedAI = true"
+      ],
+      [
+        "Enhanced climbing",
+        "Port feature",
+        "Forced for the world",
+        "enhancedClimbing = true"
+      ],
+      [
+        "Enhanced water",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Water quality",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Enhanced lighting",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Modded lighting (Improved Interior Lighting)",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Grass",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Cloud quality",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Ground sharpness",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Real windows",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Render scale",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Enhanced combat visuals",
+        "Port feature",
+        "Forced for the world",
+        "enhancedCombatVisuals = true"
+      ],
+      [
+        "Weapon glow",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Quick loot",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Loot rarity",
+        "Port feature",
+        "Forced for the world",
+        "lootRarity = true"
+      ],
+      [
+        "Wind",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Enhanced sounds",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "First-person lighting",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Enhanced map",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "3D dungeon map",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Tamriel on the map",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Land beyond the Bay",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Weather as places",
+        "Port feature",
+        "Forced for the world",
+        "weatherEvents = true"
+      ],
+      [
+        "Real forests",
+        "Port feature",
+        "Forced for the world",
+        "realForests = true"
+      ],
+      [
+        "Jungle of Bantha",
+        "Port feature",
+        "Forced for the world",
+        "banthaJungle = true"
+      ],
+      [
+        "Landforms",
+        "Port feature",
+        "Forced for the world",
+        "landforms = true"
+      ],
+      [
+        "Clear roadsides",
+        "Port feature",
+        "Forced for the world",
+        "roadVerges = true"
+      ],
+      [
+        "Blended climates",
+        "Port feature",
+        "Forced for the world",
+        "climateBlend = true"
+      ],
+      [
+        "Nearby quests",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Questlines",
+        "Port feature",
+        "Forced for the world",
+        "questlines = true"
+      ],
+      [
+        "Living world",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Windmills of Daggerfall by Kamer",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "The King’s Gambit by Unnamed (thekingsgambit.dfmod)",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Weapon Sheathing",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Steel Helm",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Morrowind Spell Effects",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Morrowind Body Motion",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Morrowind People",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Morrowind People Marks",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Billboard Look",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Enemies Fight Each Other",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Varied Dungeon Monsters",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Torches Light Your Way",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Combat Voices",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Calm HUD",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Near Death Warning",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Bows In Left Hand",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Choose Guild Jobs",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Dungeon Wall Style",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Quick slots",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Loading screens",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Event board",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Quest news",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Quest tracker",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Quest marks",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Quest guidance",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Look around",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Lever echoes",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Way out",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Wilderness camps & packs",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Encounters on the road",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "The watch defends the town",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Blood",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Climates & Calories by Ralzar",
+        "Port feature",
+        "The player's own",
+        "No forced keys"
+      ],
+      [
+        "Naval Combat",
+        "Port feature",
+        "Forced for the world",
+        "naval = true"
+      ],
+      [
+        "mediumDungeons",
+        "Port preference",
+        "Forced for the world",
+        "mediumDungeons = false"
+      ],
+      [
+        "worldDungeonSizes",
+        "Port preference",
+        "Forced for the world",
+        "worldDungeonSizes = true"
+      ],
+      [
+        "enhancedEnvironments",
+        "Port preference",
+        "Forced for the world",
+        "enhancedEnvironments = true"
+      ],
+      [
+        "enhancedAI",
+        "Port preference",
+        "Forced for the world",
+        "enhancedAI = true"
+      ],
+      [
+        "enhancedClimbing",
+        "Port preference",
+        "Forced for the world",
+        "enhancedClimbing = true"
+      ],
+      [
+        "enhancedCombatVisuals",
+        "Port preference",
+        "Forced for the world",
+        "enhancedCombatVisuals = true"
+      ],
+      [
+        "lootRarity",
+        "Port preference",
+        "Forced for the world",
+        "lootRarity = true"
+      ],
+      [
+        "weatherEvents",
+        "Port preference",
+        "Forced for the world",
+        "weatherEvents = true"
+      ],
+      [
+        "realForests",
+        "Port preference",
+        "Forced for the world",
+        "realForests = true"
+      ],
+      [
+        "banthaJungle",
+        "Port preference",
+        "Forced for the world",
+        "banthaJungle = true"
+      ],
+      [
+        "landforms",
+        "Port preference",
+        "Forced for the world",
+        "landforms = true"
+      ],
+      [
+        "roadVerges",
+        "Port preference",
+        "Forced for the world",
+        "roadVerges = true"
+      ],
+      [
+        "climateBlend",
+        "Port preference",
+        "Forced for the world",
+        "climateBlend = true"
+      ],
+      [
+        "questlines",
+        "Port preference",
+        "Forced for the world",
+        "questlines = true"
+      ],
+      [
+        "naval",
+        "Port preference",
+        "Forced for the world",
+        "naval = true"
+      ],
+      [
+        "Controls/AllowMagicRepairs",
+        "Port setting",
+        "Forced for the world",
+        "AllowMagicRepairs = True"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "commit": "e4f093166",
+  "extractedAt": "2026-10-24T10:38:26.855Z",
+  "facts": {
+    "firmament.starsPerRenown": {
+      "value": 2,
+      "label": "Stars per Renown after the first",
+      "unit": "stars",
+      "source": "src/net/firmament/firmamentLaw.js",
+      "symbol": "STARS_PER_RENOWN",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "firmament.refundFreeBelowRenown": {
+      "value": 10,
+      "label": "Refunds free below Renown",
+      "unit": "Renown",
+      "source": "src/net/firmament/firmamentLaw.js",
+      "symbol": "REFUND_FREE_BELOW_RENOWN",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "firmament.refundCostPerStar": {
+      "value": 10,
+      "label": "Refund cost per star",
+      "unit": "Marks",
+      "source": "src/net/firmament/firmamentLaw.js",
+      "symbol": "REFUND_SILVER_PER_STAR",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "firmament.respecGold": {
+      "value": 10000,
+      "label": "Firmament respec",
+      "unit": "gold",
+      "source": "src/net/firmament/firmamentLaw.js",
+      "symbol": "FIRM_RESPEC_GOLD",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "renown.max": {
+      "value": 50,
+      "label": "Maximum Renown",
+      "unit": "Renown",
+      "source": "src/net/renown.js",
+      "symbol": "RENOWN_MAX",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "renown.hourlyXpCap": {
+      "value": 15000,
+      "label": "Renown XP per real hour",
+      "unit": "XP",
+      "source": "src/net/renown.js",
+      "symbol": "RENOWN_XP_HOUR_MAX",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "renown.partyBonusPct": {
+      "value": 10,
+      "label": "Renown bonus per additional party member",
+      "unit": "%",
+      "source": "src/net/renown.js",
+      "symbol": "RENOWN_PARTY_BONUS_PCT",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "party.max": {
+      "value": 8,
+      "label": "Maximum party size",
+      "unit": "players",
+      "source": "src/net/wire.js",
+      "symbol": "PARTY_MAX",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "death.goldDivisor": {
+      "value": 10,
+      "label": "Carried gold loss divisor",
+      "source": "src/systems/deathPenalty.js",
+      "symbol": "DEATH_GOLD_DIVISOR",
+      "method": "source-regex",
+      "appliesOnline": "base"
+    },
+    "dungeon.respawnMinutes": {
+      "value": 20,
+      "label": "Public dungeon respawn",
+      "unit": "minutes",
+      "source": "src/systems/dungeon/dungeonRespawn.js",
+      "symbol": "DUNGEON_RESPAWN_MS",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "dungeon.eliteRespawnMinutes": {
+      "value": 40,
+      "label": "Elite dungeon respawn",
+      "unit": "minutes",
+      "source": "src/systems/dungeon/dungeonRespawn.js",
+      "symbol": "ELITE_DUNGEON_RESPAWN_MS",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "pistolet.damageMin": {
+      "value": 4,
+      "label": "Dwarven Pistolet minimum damage",
+      "unit": "damage",
+      "source": "src/characters/thunderlockIds.js",
+      "symbol": "PISTOLET_SPAN.min",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "pistolet.damageMax": {
+      "value": 15,
+      "label": "Dwarven Pistolet maximum damage",
+      "unit": "damage",
+      "source": "src/characters/thunderlockIds.js",
+      "symbol": "PISTOLET_SPAN.max",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "pistolet.price": {
+      "value": 260,
+      "label": "Dwarven Pistolet base price",
+      "unit": "gold",
+      "source": "src/systems/pistolet.js",
+      "symbol": "PISTOLET_TEMPLATES.0.basePrice",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "wild.foeHealthMult": {
+      "value": 4,
+      "label": "Wild zone foe health multiplier",
+      "unit": "times",
+      "source": "src/systems/wild/wildZone.js",
+      "symbol": "WILD_FOE_HEALTH_MULT",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "wild.foeDamageMult": {
+      "value": 4,
+      "label": "Wild zone foe damage multiplier",
+      "unit": "times",
+      "source": "src/systems/wild/wildZone.js",
+      "symbol": "WILD_FOE_DAMAGE_MULT",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "crafts.courtWritsPerDay": {
+      "value": 3,
+      "label": "Court writs per day",
+      "unit": "writs",
+      "source": "src/net/professionLaw.js",
+      "symbol": "COURT_WRITS_PER_DAY",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "craftWrits.perDay": {
+      "value": 3,
+      "label": "Craft writs per day",
+      "unit": "writs",
+      "source": "src/net/craftWritLaw.js",
+      "symbol": "CRAFT_WRITS_PER_DAY",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "marks.combatPerDay": {
+      "value": 150,
+      "label": "Combat Marks per day",
+      "unit": "Marks",
+      "source": "src/net/marksLaw.js",
+      "symbol": "MARKS_COMBAT.perDay",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "marks.bankPerDay": {
+      "value": 300,
+      "label": "Marks bank exchange per day",
+      "unit": "Marks",
+      "source": "src/net/marksLaw.js",
+      "symbol": "MARKS_BANK.perDay",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "marks.bankGoldPerMark": {
+      "value": 8,
+      "label": "Bank exchange gold per Mark",
+      "unit": "gold",
+      "source": "src/net/marksLaw.js",
+      "symbol": "MARKS_BANK.goldPerMark",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "market.listingHours": {
+      "value": 72,
+      "label": "Market listing lifetime",
+      "unit": "hours",
+      "source": "src/net/marketLaw.js",
+      "symbol": "MARKET_LISTING_S",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "market.listingsMax": {
+      "value": 30,
+      "label": "Maximum market listings",
+      "unit": "listings",
+      "source": "src/net/marketLaw.js",
+      "symbol": "MARKET_LISTINGS_MAX",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "crafts.aboveJourneyman": {
+      "value": 2,
+      "label": "Crafts allowed above Journeyman",
+      "unit": "crafts",
+      "source": "src/net/professionLaw.js",
+      "symbol": "CRAFTS_ABOVE_JOURNEYMAN",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "crafts.journeymanRank": {
+      "value": 50,
+      "label": "Journeyman rank",
+      "unit": "rank",
+      "source": "src/net/professionLaw.js",
+      "symbol": "JOURNEYMAN_RANK",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "travel.portalStoneShards": {
+      "value": 5,
+      "label": "Portal Stone shard cost",
+      "unit": "shards",
+      "source": "src/systems/gate/gateSpoils.js",
+      "symbol": "PORTAL_STONE_SHARDS",
+      "method": "source-regex",
+      "appliesOnline": "base"
+    },
+    "sea.prizeShare": {
+      "value": 0.3333333333333333,
+      "label": "Prize share of a wreck’s worth",
+      "unit": "share",
+      "source": "src/net/sea/seaPrizeLaw.js",
+      "symbol": "SEA_PRIZE_SHARE",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "sea.prizePiecesMax": {
+      "value": 8,
+      "label": "Maximum pieces taken as a sea prize",
+      "unit": "pieces",
+      "source": "src/net/sea/seaPrizeLaw.js",
+      "symbol": "SEA_PRIZE_PIECES_MAX",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "sea.prizeHoldDays": {
+      "value": 3,
+      "label": "Prize hold before unclaimed goods return",
+      "unit": "days",
+      "source": "src/net/sea/seaPrizeLaw.js",
+      "symbol": "SEA_PRIZE_HOLD_S",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "dayTurn.spreadMs": {
+      "value": 600000,
+      "label": "Daily turn spread window",
+      "unit": "ms",
+      "source": "src/net/dayTurn.js",
+      "symbol": "DAY_TURN_SPREAD_MS",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "travel.carriageDailyFee": {
+      "value": 1,
+      "label": "Online daily carriage fee",
+      "unit": "gold",
+      "source": "src/systems/modSettings.js",
+      "symbol": "modSetting(immersive-travel, General.DailyCarriageFee)",
+      "method": "export",
+      "appliesOnline": "whole",
+      "vendor": "immersive-travel",
+      "key": "General.DailyCarriageFee"
+    },
+    "bank.onlineLoanDivisor": {
+      "value": 10,
+      "label": "Online loan divisor",
+      "source": "src/systems/banking.js",
+      "symbol": "EMPIRE_LOAN_DIVISOR",
+      "method": "source-regex",
+      "appliesOnline": "base"
+    },
+    "home.priceMin": {
+      "value": 5000,
+      "label": "Minimum home price",
+      "unit": "gold",
+      "source": "src/net/homeLaw.js",
+      "symbol": "HOME_PRICE_MIN",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "home.priceMax": {
+      "value": 250000,
+      "label": "Maximum home price",
+      "unit": "gold",
+      "source": "src/net/homeLaw.js",
+      "symbol": "HOME_PRICE_MAX",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "guild.foundingGold": {
+      "value": 10000,
+      "label": "Guild founding cost",
+      "unit": "gold",
+      "source": "src/net/guild/guildLaw.js",
+      "symbol": "GUILD_FOUND_GOLD",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "guild.foundingRenown": {
+      "value": 10,
+      "label": "Guild founding Renown",
+      "unit": "Renown",
+      "source": "src/net/guild/guildLaw.js",
+      "symbol": "GUILD_FOUND_RENOWN",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "guild.membersMax": {
+      "value": 75,
+      "label": "Maximum guild members",
+      "unit": "members",
+      "source": "src/net/guild/guildLaw.js",
+      "symbol": "GUILD_MEMBERS_MAX",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "training.memberCostPerLevel": {
+      "value": 100,
+      "label": "Guild member training cost per level",
+      "unit": "gold",
+      "source": "src/systems/guild/guildServices.js",
+      "symbol": "trainingPrice(member, 1)",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "training.nonmemberCostPerLevel": {
+      "value": 400,
+      "label": "Non-member training cost per level",
+      "unit": "gold",
+      "source": "src/systems/guild/guildServices.js",
+      "symbol": "trainingPrice(non-member, 1)",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "training.sessionCap": {
+      "value": 50,
+      "label": "Highest skill training can reach",
+      "unit": "skill level",
+      "source": "src/systems/guild/guildServices.js",
+      "symbol": "trainingMax()",
+      "method": "export",
+      "appliesOnline": "base"
+    },
+    "revenant.minRenown": {
+      "value": 10,
+      "label": "Revenants begin at Renown",
+      "unit": "Renown",
+      "source": "src/systems/revenant/revenant.js",
+      "symbol": "REVENANT_MIN_RENOWN",
+      "method": "source-regex",
+      "appliesOnline": "base"
+    },
+    "pcaao.hitChanceMin": {
+      "value": 3,
+      "label": "Minimum hit chance",
+      "unit": "%",
+      "source": "src/combat/pcaao.js",
+      "symbol": "PCAAO_HIT_CHANCE_MIN",
+      "method": "export",
+      "appliesOnline": "whole",
+      "vendor": "pcaao",
+      "key": "armorHitFormulaRedone"
+    },
+    "pcaao.hitChanceMax": {
+      "value": 97,
+      "label": "Maximum hit chance",
+      "unit": "%",
+      "source": "src/combat/pcaao.js",
+      "symbol": "PCAAO_HIT_CHANCE_MAX",
+      "method": "export",
+      "appliesOnline": "whole",
+      "vendor": "pcaao",
+      "key": "armorHitFormulaRedone"
+    },
+    "pcaao.strengthDamageDivisor": {
+      "value": 10,
+      "label": "Strength damage divisor",
+      "source": "src/combat/pcaao.js",
+      "symbol": "pcaaoDamageModifier",
+      "method": "export",
+      "appliesOnline": "whole",
+      "vendor": "pcaao",
+      "key": "fixedStrengthDamageModifier"
+    },
+    "pcaao.adrenalineRushThresholdDivisor": {
+      "value": 6,
+      "label": "Adrenaline Rush health threshold divisor",
+      "source": "src/combat/pcaao.js",
+      "symbol": "pcaaoAdrenalineRushToHit (threshold, source-regex)",
+      "method": "source-regex",
+      "appliesOnline": "whole",
+      "vendor": "pcaao",
+      "key": "armorHitFormulaRedone"
+    },
+    "pcaao.adrenalineRushBonus": {
+      "value": 8,
+      "label": "Adrenaline Rush hit bonus",
+      "unit": "to hit",
+      "source": "src/combat/pcaao.js",
+      "symbol": "pcaaoAdrenalineRushToHit",
+      "method": "export",
+      "appliesOnline": "whole",
+      "vendor": "pcaao",
+      "key": "armorHitFormulaRedone"
+    },
+    "pcaao.adrenalineRushImprovedBonus": {
+      "value": 12,
+      "label": "Improved Adrenaline Rush hit bonus",
+      "unit": "to hit",
+      "source": "src/combat/pcaao.js",
+      "symbol": "pcaaoAdrenalineRushToHit (improved bonus)",
+      "method": "source-regex",
+      "appliesOnline": "whole",
+      "vendor": "pcaao",
+      "key": "armorHitFormulaRedone"
+    }
+  }
+}

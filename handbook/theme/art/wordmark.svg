@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 76" fill="none">
+  <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="36" cy="29" r="19"/>
+    <path d="M36 3v7m0 38v5M10 29h7m38 0h7M18 11l5 5m26 26 5 5M54 11l-5 5M23 42l-5 5M36 12l5 17-5 17-5-17Z"/>
+    <path d="m19 29 17-5 17 5-17 5ZM7 49c11-3 20-1 29 5 9-6 18-8 29-5v18c-11-3-20-1-29 5-9-6-18-8-29-5ZM36 54v18M13 55c7-1 12 1 17 4m12 0c5-3 10-5 17-4"/>
+  </g>
+  <g fill="currentColor" font-family="'Cormorant Garamond', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif" font-weight="600" letter-spacing="-.5">
+    <text x="82" y="28" font-size="24">The DFO Online</text>
+    <text x="81" y="66" font-size="42">Handbook</text>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "name": "dfo-terra-sol",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "start": "node src/main.mjs",
+    "browser": "node src/browser.mjs",
+    "status": "node src/control.mjs status"
+  }
+}

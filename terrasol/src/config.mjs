@@ -1,0 +1,15 @@
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import fs from 'node:fs';
+export const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+export const DFO_ROOT = resolve(ROOT, '..');
+export const DATA = resolve(ROOT, 'data');
+export const ENGINE = resolve(process.env.DFO_ENGINE_PATH ?? resolve(ROOT, 'engine'));
+const enginePin = (() => { try { return JSON.parse(fs.readFileSync(resolve(ROOT, 'engine-pin.json'), 'utf8')).commit; } catch { return 'e4f09316684d78d194553d3c94cbaa9bbdaa9b7b'; } })();
+export const ENGINE_COMMIT = process.env.DFO_ENGINE_COMMIT ?? enginePin;
+export const DEPENDENCIES = process.env.DFO_ENGINE_PATH ? resolve(ENGINE, 'node_modules') : resolve(DFO_ROOT, 'upstream/daggerfall-js-source/node_modules');
+export const ARENA2 = process.env.ARENA2_PATH ?? 'C:/Program Files (x86)/Steam/steamapps/common/The Elder Scrolls Daggerfall/DF/DAGGER/ARENA2';
+export const GAME_PORT = 5390;
+export const CONTROL_PORT = 5391;
+export const GAME_URL = `http://127.0.0.1:${GAME_PORT}/play/`;
+export const CONTROL_URL = `http://127.0.0.1:${CONTROL_PORT}`;

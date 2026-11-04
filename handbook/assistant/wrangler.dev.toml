@@ -1,0 +1,22 @@
+﻿name = "dfo-handbook-assistant-dev"
+main = "src/index.js"
+compatibility_date = "2026-09-25"
+workers_dev = true
+
+[ai]
+binding = "AI"
+
+[[kv_namespaces]]
+binding = "ASSISTANT_KV"
+id = "<ASSISTANT_KV_NAMESPACE_ID>"
+
+[vars]
+MONTHLY_BUDGET_USD = "5"
+BUDGET_ENFORCE = "true"
+QUOTA_ENFORCE = "false"
+FREE_DAILY = "20"
+FREE_MONTHLY = "200"
+ALLOW_ESCALATION = "false"
+ALLOW_TEST_USER = "true"
+
+DEBUG_RAW = "true"

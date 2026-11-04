@@ -1,0 +1,138 @@
+{
+  "format": "dfo-planner/build",
+  "build": {
+    "v": 1,
+    "name": "",
+    "race": "Khajiit",
+    "gender": "female",
+    "classMode": "custom",
+    "classIndex": 16,
+    "custom": {
+      "name": "Tiger Fist",
+      "hp": 30,
+      "skills": [
+        30,
+        34,
+        20,
+        0,
+        21,
+        16,
+        3,
+        18,
+        17,
+        19,
+        2,
+        1
+      ],
+      "stats": {
+        "strength": 75,
+        "intelligence": 10,
+        "willpower": 10,
+        "agility": 75,
+        "endurance": 70,
+        "personality": 10,
+        "speed": 75,
+        "luck": 75
+      },
+      "advantages": [
+        {
+          "primary": "expertiseIn",
+          "secondary": "handToHand"
+        },
+        {
+          "primary": "immunity",
+          "secondary": "toParalysis"
+        },
+        {
+          "primary": "immunity",
+          "secondary": "toDisease"
+        },
+        {
+          "primary": "athleticism",
+          "secondary": ""
+        },
+        {
+          "primary": "adrenalineRush",
+          "secondary": ""
+        }
+      ],
+      "disadvantages": [
+        {
+          "primary": "darknessPoweredMagery",
+          "secondary": "unableToUseMagicInDaylight"
+        },
+        {
+          "primary": "lightPoweredMagery",
+          "secondary": "unableToUseMagicInDarkness"
+        },
+        {
+          "primary": "inabilityToRegen",
+          "secondary": ""
+        },
+        {
+          "primary": "forbiddenMaterial",
+          "secondary": "steel"
+        },
+        {
+          "primary": "forbiddenMaterial",
+          "secondary": "elven"
+        },
+        {
+          "primary": "forbiddenMaterial",
+          "secondary": "dwarven"
+        }
+      ],
+      "reps": {
+        "merchants": 0,
+        "peasants": 0,
+        "scholars": 0,
+        "nobility": 0,
+        "underworld": 0
+      }
+    },
+    "rolls": {
+      "preset": "typical",
+      "stats": {
+        "strength": 5,
+        "intelligence": 5,
+        "willpower": 5,
+        "agility": 5,
+        "endurance": 5,
+        "personality": 5,
+        "speed": 5,
+        "luck": 5
+      },
+      "pool": 10,
+      "skills": {}
+    },
+    "statSpend": {
+      "strength": 2,
+      "intelligence": 0,
+      "willpower": 0,
+      "agility": 2,
+      "endurance": 2,
+      "personality": 0,
+      "speed": 2,
+      "luck": 2
+    },
+    "skillSpend": {
+      "0": 6,
+      "3": 6,
+      "30": 6
+    },
+    "bio": {
+      "0": 1,
+      "1": 6,
+      "6": 4,
+      "8": 3,
+      "9": 3
+    },
+    "reflexes": 2,
+    "settings": {
+      "online": true,
+      "overhaul": true,
+      "leveling": "classic",
+      "planLevel": 10
+    }
+  }
+}

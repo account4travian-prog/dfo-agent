@@ -1,0 +1,7 @@
+# Window-reader reuse
+
+The enhanced window reader at `engine/src/rowan/agentWindows.js` is copied byte for byte from `%USERPROFILE%/Documents/DFO/.claude/worktrees/ai-game-interface-dfos-3bf743/upstream/dfo-agent/src/agent/agentWindows.js`, source checkout `5ff039c305a1dc8f5ea578db6a7dbabbf98d6cd4`. The copied file's SHA-256 is `13e6d9d3de8dc3725baf506d735b9aa0677958a850f8ef5e01cc45b01efb159f`. The engine is the isolated project copy; the original project remains unchanged.
+
+The same bytes are tracked at `vendor/agentWindows.js` with `vendor/LICENSE.dfo`; browser startup verifies or installs that reader in the isolated engine. `src/legacy-windows.mjs` loads it inside the existing page and adapts its rendered window text, visible control labels, bounds, HUD and plaque to serializable observations. It omits DOM objects. The module's canvas `setPaintedWords` data appears only if a painter supplies it; copying the reader alone does not instrument a painter. The reader's window selection and clipping/hit testing govern its evidence, and it does not expose window model internals.
+
+The copied module also contains historical synthetic-event helpers; this project does not invoke those. Game actions remain in the new trusted browser input broker. Labels and rectangles are observation evidence, not permission to bypass the broker's freshness and visibility checks. A control ID is included only when the broker has assigned one to the same DOM element; otherwise the visible bounds remain available.

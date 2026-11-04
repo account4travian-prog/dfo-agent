@@ -1,0 +1,20 @@
+{
+  "corpus": "e4f093166",
+  "note": "First assistant eval set. Each answerable case expects at least one cited/card URL; unanswerable/live cases expect no model answer.",
+  "cases": [
+    { "id": "bank", "question": "How do I bank gold?", "expect": ["town/banks/", "feet/money-and-markets/"] },
+    { "id": "marks", "question": "How are gold and Marks different?", "expect": ["feet/money-and-markets/", "feet/making-money/"] },
+    { "id": "stars", "question": "How many stars do I get per Renown?", "expect": ["feet/the-firmament/", "feet/renown/"] },
+    { "id": "quest-start", "question": "Where do I start a questline?", "expect": ["quests/", "reference/questline-ladder/"] },
+    { "id": "brisienna", "question": "Who is Lady Brisienna?", "expect": ["reference/lady-brisienna/", "quests/"] },
+    { "id": "breach", "question": "What is a Dagon Breach?", "expect": ["rivals/dagons-breach/", "bay/"] },
+    { "id": "travel", "question": "How does carriage travel work?", "expect": ["travel/", "travel/hired-carriages/"] },
+    { "id": "death", "question": "What happens when I die online?", "expect": ["hold/dying-online/"] },
+    { "id": "firmament", "question": "What does the Firmament do?", "expect": ["feet/the-firmament/"] },
+    { "id": "planner", "question": "Where is the character planner?", "expect": ["reference/character-planner/", "quests/"] },
+    { "id": "map", "question": "Where is the map?", "expect": ["reference/bay-map/"] },
+    { "id": "unknown-live", "question": "Who is the best player online now?", "expect": [], "expectNoModel": true },
+    { "id": "unknown-price", "question": "What is the current price of a house?", "expect": [], "expectNoModel": true },
+    { "id": "unknown-topic", "question": "What is the airspeed velocity of an unladen swallow?", "expect": [], "expectNoModel": true }
+  ]
+}

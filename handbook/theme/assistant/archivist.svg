@@ -1,0 +1,120 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" role="img" aria-labelledby="archivist-title archivist-desc">
+  <title id="archivist-title">The Archivist at his reading desk</title>
+  <desc id="archivist-desc">An original portrait of an older Breton man with a weathered, kindly face, silver hair and beard, and a sea-green hood fastened with brass. One hand rests on an open book at a wooden desk.</desc>
+  <defs>
+    <linearGradient id="av-paper" x2="0" y2="1">
+      <stop stop-color="#FBF7EE"/><stop offset="1" stop-color="#E6D9BE"/>
+    </linearGradient>
+    <linearGradient id="av-cloth" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#377E77"/><stop offset=".52" stop-color="#286B68"/><stop offset="1" stop-color="#193F41"/>
+    </linearGradient>
+    <linearGradient id="av-skin" x1="0" y1="0" x2="1" y2=".7">
+      <stop stop-color="#E8C6A0"/><stop offset=".55" stop-color="#D3A781"/><stop offset="1" stop-color="#B98061"/>
+    </linearGradient>
+    <linearGradient id="av-silver" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FBF7EE"/><stop offset=".6" stop-color="#D5D5C9"/><stop offset="1" stop-color="#929B97"/>
+    </linearGradient>
+    <clipPath id="av-frame"><rect x="5" y="5" width="310" height="350" rx="25"/></clipPath>
+    <clipPath id="av-eye-left"><path d="M116 134Q128 126 141 135Q128 142 116 134Z"/></clipPath>
+    <clipPath id="av-eye-right"><path d="M166 135Q178 126 190 133Q179 141 166 135Z"/></clipPath>
+  </defs>
+  <g id="archivist-root" clip-path="url(#av-frame)" stroke-linecap="round" stroke-linejoin="round">
+    <g id="av-background" aria-hidden="true">
+      <rect x="5" y="5" width="310" height="350" rx="25" fill="url(#av-paper)"/>
+      <path d="M28 270V132a132 132 0 0 1 264 0v138" fill="none" stroke="#8A6A2F" stroke-width="2" opacity=".42"/>
+      <path d="M38 206V131a122 122 0 0 1 244 0v75" fill="none" stroke="#8A6A2F" opacity=".23"/>
+      <path d="M23 238h35m206 0h33M31 224h20m221 0h17M43 75l14 8m207-8-14 8" fill="none" stroke="#8A6A2F" stroke-width="2" opacity=".35"/>
+      <circle cx="160" cy="42" r="3" fill="#8A6A2F"/>
+    </g>
+    <g id="figure">
+      <g id="av-breath">
+        <!-- Broad cloak shapes survive a 92 px rendering. -->
+        <path d="M30 300Q36 248 62 226L112 203h94l48 23q28 24 36 74Z" fill="url(#av-cloth)" stroke="#1F2328" stroke-width="3"/>
+        <path d="m111 211-31 30-16 58h47l21-72m68-16 29 33 26 55h-53l-17-72" fill="#193F41"/>
+        <path d="m65 241-14 49m38-57-19 56m168-46 27 47" fill="none" stroke="#77A294" stroke-width="2" opacity=".55"/>
+        <path d="M127 221h63l10 78h-88Z" fill="#303B39"/>
+        <path d="m141 235 1 52m35-52 7 52" fill="none" stroke="#565D60" stroke-width="3"/>
+        <g id="av-head-pose">
+          <g id="av-head-motion">
+            <g id="hood">
+              <path d="M72 172Q62 102 89 65q25-35 72-35 49 0 76 44 21 35 9 100l-21 63-32-17h-70l-34 19Z" fill="url(#av-cloth)" stroke="#1F2328" stroke-width="3"/>
+              <path d="M88 168Q78 108 105 77q20-24 55-25 37 1 60 34 17 25 11 78l-19 50-109 5Z" fill="#193F41"/>
+              <path d="M80 156Q72 97 104 63q20-22 48-24M185 42q39 17 49 61" fill="none" stroke="#82A99A" stroke-width="3"/>
+              <path d="m79 180 13 35 20 12m126-52-16 43-16 9" fill="none" stroke="#101F26" stroke-width="5"/>
+              <path d="m87 183 10 29m134-34-12 31" fill="none" stroke="#82A99A" stroke-width="2"/>
+            </g>
+            <g id="face">
+              <path d="M108 120q-14-6-13 10 0 15 14 20m100-31q13-8 14 7 2 16-14 24" fill="#C59473" stroke="#654F43" stroke-width="2"/>
+              <path d="M108 101q4-29 49-30 45-1 52 31l-2 56q-3 31-22 47-13 11-27 11-19-2-36-22-14-20-15-43Z" fill="url(#av-skin)" stroke="#654F43" stroke-width="2.5"/>
+              <path d="M110 103q0-23 18-30 20-13 44-6 28 4 37 32l-2 23-10-20-7-15q-12 7-29 2l-18-7q-7 16-26 19l-9 21Z" fill="url(#av-silver)"/>
+              <path d="M119 91q12-8 17-16m12 1q20 12 36 5m8 4 8 16" fill="none" stroke="#929B97" stroke-width="2"/>
+              <path d="M119 109q16-8 31-3m13 0q14-4 25 1m-64 7q12-5 24-2m19 0 17 1" fill="none" stroke="#9B7159" stroke-width="1.7"/>
+              <path d="M111 144q4 18 15 23l13-13m65-11q-2 13-13 20l-13-10" fill="#C08C6A" opacity=".6"/>
+              <g id="eyes">
+                <path d="M116 134Q128 126 141 135Q128 142 116 134Zm50 1Q178 126 190 133Q179 141 166 135Z" fill="#F4EEE1"/>
+                <g clip-path="url(#av-eye-left)"><g id="pupil-left"><circle cx="130" cy="135" r="5.3" fill="#286B68"/><circle cx="130" cy="135" r="2.8" fill="#1F2328"/><circle cx="128.5" cy="133.3" r="1.1" fill="#FBF7EE"/></g></g>
+                <g clip-path="url(#av-eye-right)"><g id="pupil-right"><circle cx="179" cy="134" r="5.3" fill="#286B68"/><circle cx="179" cy="134" r="2.8" fill="#1F2328"/><circle cx="177.5" cy="132.3" r="1.1" fill="#FBF7EE"/></g></g>
+                <path d="M116 134q12-10 25 1m25 0q12-10 24-2" fill="none" stroke="#493E35" stroke-width="2.8"/>
+                <path d="m114 141 10 3m62-2 8-4m-79-9-5-2m84 0 5-3" fill="none" stroke="#9B7159" stroke-width="1.8"/>
+              </g>
+              <g id="brows" fill="#E0E0D5" stroke="#929B97" stroke-width="1.3">
+                <path d="M113 125q11-12 29-3l2 4q-18-5-31 1Zm51-3q17-10 29-1l2 5q-16-5-30 1Z"/>
+              </g>
+              <path d="m154 130-6 23q3 6 12 4l6-3" fill="none" stroke="#9B7159" stroke-width="2.5"/>
+              <path d="M158 133v15m-8 3 8 2" fill="none" stroke="#F0CDA6" stroke-width="2.5"/>
+              <g id="beard">
+                <path d="M110 150q8 16 20 18l25 4 26-5q14-4 24-20l-2 33q-5 34-43 51-35-13-45-45Z" fill="url(#av-silver)" stroke="#929B97" stroke-width="1.5"/>
+                <path d="m119 169 8 28m4-17 10 32m3-28 9 32m39-48-9 31m-4-20-12 34m-4-27-3 33" fill="none" stroke="#899591" stroke-width="2"/>
+                <path d="m125 170 10 14m11 5 6 16m37-32-8 18m-10 6-5 16" fill="none" stroke="#FBF7EE" stroke-width="2.5"/>
+              </g>
+              <!-- The mouth is a filled shape, so scaleY produces an aperture. -->
+              <g id="av-mouth-rest"><g id="mouth"><ellipse cx="158" cy="178" rx="11" ry="4.8" fill="#674B3D"/><path d="M151 176h13" stroke="#F4EEE1" stroke-width="1.4"/></g></g>
+              <path d="M156 160q-9-2-16 4l-9 8q15 3 26-5 12 8 27 3l-11-7q-9-5-17-3Z" fill="#E4E4D9" stroke="#929B97" stroke-width="1.2"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+        <g id="compass" aria-hidden="true">
+          <path d="m139 238 12-9h18l13 9-12 10h-19Z" fill="#8A6A2F" stroke="#1F2328" stroke-width="2"/>
+          <circle cx="160" cy="239" r="10" fill="#D9BF7D" stroke="#8A6A2F" stroke-width="2"/>
+          <path d="m160 231 3 8-3 8-3-8Z" fill="#286B68"/><path d="M153 239h14" stroke="#8A6A2F"/>
+        </g>
+    <g id="av-desk" aria-hidden="true">
+      <path d="M5 306q152-12 310 0v49H5Z" fill="#8A6A2F" stroke="#1F2328" stroke-width="3"/>
+      <path d="M6 319h308v36H6Z" fill="#695136"/>
+      <path d="M17 326h76m13 0h74m30 11h88M25 343h113" fill="none" stroke="#D2B17B" stroke-width="2" opacity=".35"/>
+    </g>
+    <g id="av-book-pose">
+      <g id="book">
+        <path d="m38 279 112 10 124-12 9 48-121 20-122-19Z" fill="#193F41" stroke="#1F2328" stroke-width="3"/>
+        <path d="m42 283 114 10 115-12 5 39-114 19-115-18Z" fill="#D4BD8F" stroke="#8A6A2F" stroke-width="2"/>
+        <path d="m48 318 112 16 111-18m-220-4 109 15 110-16" fill="none" stroke="#8A6A2F" stroke-width="1.5"/>
+        <g id="left-page">
+          <path d="M43 275q56-13 117 15v39q-62-24-110-14Z" fill="#FBF7EE" stroke="#8A6A2F" stroke-width="2"/>
+          <path d="m61 285 28 1m-27 7q37-1 80 15m-77-7q33 0 63 11" fill="none" stroke="#8A6A2F" stroke-width="2.3"/>
+          <path d="M98 285q25 3 44 11" fill="none" stroke="#565D60" stroke-width="2"/>
+        </g>
+        <g id="right-page">
+          <path d="M160 290q57-29 108-18l4 40q-53-5-112 17Z" fill="#F4EEE1" stroke="#8A6A2F" stroke-width="2"/>
+          <path d="M179 294q32-12 69-12m-69 20q39-13 74-12m-72 20q32-10 60-11" fill="none" stroke="#565D60" stroke-width="2.2"/>
+        </g>
+        <!-- A thin resting leaf expands only near the end of a reading cycle. -->
+        <g id="page-turn" opacity="0" aria-hidden="true">
+          <path d="M160 290q57-29 108-18l4 40q-53-5-112 17Z" fill="#FBF7EE" stroke="#8A6A2F" stroke-width="2"/>
+          <path d="M179 294q32-12 69-12m-69 20q39-13 74-12" fill="none" stroke="#8A6A2F" stroke-width="2"/>
+        </g>
+        <path d="M160 291v39l9 7-7 8-9-8 4-8v-38" fill="#8A6A2F"/>
+      </g>
+      <g id="av-hand-pose">
+        <g id="hand">
+          <path d="m81 256 17 6 10 25-29 9-17-28Z" fill="#286B68" stroke="#1F2328" stroke-width="2.5"/>
+          <path d="m84 270 12-5 12 13 22 8q6 3 3 7-2 3-7 1l-14-4 8 12q3 5-2 7-4 2-7-3l-6-8 4 10q1 6-4 6-4 0-6-5l-4-9 1 8q0 5-5 4-4-1-5-7l-7-22Z" fill="url(#av-skin)" stroke="#654F43" stroke-width="2"/>
+          <path d="m94 278 9 7m-13 0 8 8m8-8 7 4" fill="none" stroke="#9B7159" stroke-width="1.7"/>
+          <path d="m83 271 11-4" stroke="#D9BF7D" stroke-width="3"/>
+        </g>
+      </g>
+    </g>
+    <rect x="5" y="5" width="310" height="350" rx="25" fill="none" stroke="#8A6A2F" stroke-width="2" aria-hidden="true"/>
+  </g>
+</svg>

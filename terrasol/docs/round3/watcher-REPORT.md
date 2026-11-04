@@ -1,0 +1,8 @@
+# Watcher and census report
+
+- The census remains a zero-model summary using `buildReport()` metric v2 for verified useful outcomes. The watcher now caches rows and the report by trace-file signature, defaults to a 15-second poll, resets evidence after enforced watcher actions, operator resume, session start, or worker epoch start, and counts idle time only across consecutive in-world polls.
+- Health-fall holds now require three consecutive health drops with no position progress and are suppressed for fight/retreat tasks, visible hostile targets, and combat Body goals. Input-without-task and unreleased-lease rules remain dormant when the control API omits their fields.
+- Added regressions for combat suppression, repeated stuck evidence while bitten without a fight task, reset after resume, title-screen idle time, interval default, legacy/browser census, native outcomes, and missing usage. The five new behavior tests failed before implementation; focused watcher and census tests pass after it.
+- Full suite (`node --test test/*.test.mjs`): 237 tests, 232 passed, 5 failed. All five failures are in `test/native-bridge.test.mjs`: this worktree lacks the ignored `engine/` files, and the Node test process cannot find the `git` executable required by the other native-bridge checks. This matches the shared warning that the engine-dependent tests are unavailable in a worktree.
+- Requests: native control health/snapshot should expose current input-held state, active-task ownership, and an input lease start/release signal. No further log events were needed for the implemented rules.
+- Live polling, enforcement through the runner command file, and physical input release remain unverified. No game, browser, service, or model was started.

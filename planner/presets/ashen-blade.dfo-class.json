@@ -1,0 +1,92 @@
+{
+  "format": "daggerfall-enhanced/custom-class",
+  "version": 1,
+  "name": "Ashen Blade",
+  "hitPointsPerLevel": 30,
+  "skills": {
+    "primary": [
+      "Long Blade",
+      "Critical Strike",
+      "Dodging"
+    ],
+    "major": [
+      "Medical",
+      "Running",
+      "Stealth"
+    ],
+    "minor": [
+      "Jumping",
+      "Climbing",
+      "Swimming",
+      "Backstabbing",
+      "Streetwise",
+      "Etiquette"
+    ]
+  },
+  "attributes": {
+    "strength": 75,
+    "intelligence": 10,
+    "willpower": 10,
+    "agility": 75,
+    "endurance": 70,
+    "personality": 10,
+    "speed": 75,
+    "luck": 75
+  },
+  "advantages": [
+    {
+      "primary": "expertiseIn",
+      "secondary": "longBlade"
+    },
+    {
+      "primary": "immunity",
+      "secondary": "toParalysis"
+    },
+    {
+      "primary": "immunity",
+      "secondary": "toDisease"
+    },
+    {
+      "primary": "athleticism"
+    },
+    {
+      "primary": "adrenalineRush"
+    }
+  ],
+  "disadvantages": [
+    {
+      "primary": "darknessPoweredMagery",
+      "secondary": "unableToUseMagicInDaylight"
+    },
+    {
+      "primary": "lightPoweredMagery",
+      "secondary": "unableToUseMagicInDarkness"
+    },
+    {
+      "primary": "inabilityToRegen"
+    },
+    {
+      "primary": "forbiddenMaterial",
+      "secondary": "elven"
+    },
+    {
+      "primary": "forbiddenMaterial",
+      "secondary": "adamantium"
+    },
+    {
+      "primary": "forbiddenMaterial",
+      "secondary": "mithril"
+    },
+    {
+      "primary": "forbiddenMaterial",
+      "secondary": "silver"
+    }
+  ],
+  "reputations": {
+    "merchants": 0,
+    "peasants": 0,
+    "scholars": 0,
+    "nobility": 0,
+    "underworld": 0
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "commit": "0df2d87eb",
+  "stages": [
+    { "id": "begin", "number": 0, "title": "Before you begin", "gate": "Open to everyone", "promise": "You can get into the game, with an account that keeps your progress." },
+    { "id": "creation", "number": 1, "title": "Creating your character", "gate": "A new character", "promise": "You understand every creation choice and its long-term cost." },
+    { "id": "hold", "number": 2, "title": "Privateer's Hold", "gate": "Entering the world", "promise": "You can fight, survive and leave the first dungeon." },
+    { "id": "town", "number": 3, "title": "Your first town", "gate": "Reaching a settlement", "promise": "You can use a town's services, join a guild, meet other players and stay on the right side of the law." },
+    { "id": "travel", "number": 4, "title": "Getting around", "gate": "Leaving your first town", "promise": "You can cross the Iliac Bay on foot, by horse, carriage or ship." },
+    { "id": "feet", "number": 5, "title": "Finding your feet", "gate": "Levels 2-3", "promise": "You level well, earn Renown, spend your first stars and start a profession." },
+    { "id": "gear", "number": 6, "title": "Gear and the sea", "gate": "Levels 4-5", "promise": "You understand loot rarity, sockets and reforging, and can take to the sea." },
+    { "id": "bay", "number": 7, "title": "The wider Bay", "gate": "Level 6 · Renown 5", "promise": "You can join the Bay's shared fights: raids, the Arena, elites and seasonal events." },
+    { "id": "rivals", "number": 8, "title": "Rivals and the Breach", "gate": "Levels 8-10 · Renown 10", "promise": "You can face revenants, keep a companion, fight at Dagon's Breaches and take part in guild politics." },
+    { "id": "late", "number": 9, "title": "The late game", "gate": "Varies", "promise": "You know the long-term goals and how to reach them." },
+    { "id": "reference", "number": null, "title": "Reference", "gate": "Always available", "promise": "Look things up quickly." }
+  ]
+}

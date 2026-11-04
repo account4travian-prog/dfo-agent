@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76" fill="none">
+  <style>:root{color:#1F2328}@media(prefers-color-scheme:dark){:root{color:#E9E1CF}}</style>
+  <g stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="38" cy="29" r="19"/>
+    <path d="M38 3v7m0 38v5M12 29h7m38 0h7M20 11l5 5m26 26 5 5M56 11l-5 5M25 42l-5 5M38 12l5 17-5 17-5-17Zm-17 17 17-5 17 5-17 5Z"/>
+    <path d="M9 49c11-3 20-1 29 5 9-6 18-8 29-5v18c-11-3-20-1-29 5-9-6-18-8-29-5ZM38 54v18M15 55c7-1 12 1 17 4m12 0c5-3 10-5 17-4"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DFO Character Planner</title>
+  <meta name="description" content="Plan a DFO Online character the way the game makes one, and see exactly how its rules treat it.">
+  <link rel="stylesheet" href="src/ui/styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <h1>DFO Character Planner</h1>
+      <p class="sub">Plan a character the way DFO Online makes one, and see how its rules treat it.</p>
+    </div>
+    <div class="situation" id="situation"></div>
+    <div class="actions" id="actions"></div>
+  </header>
+  <nav class="steps" id="steps" aria-label="Character creation steps"></nav>
+  <main class="layout">
+    <section class="step" id="step" aria-live="polite"></section>
+    <aside class="sheet" id="sheet" aria-label="Character sheet"></aside>
+  </main>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <input type="file" id="file-input" accept=".json,application/json" hidden>
+  <script type="module" src="src/ui/app.js"></script>
+</body>
+</html>

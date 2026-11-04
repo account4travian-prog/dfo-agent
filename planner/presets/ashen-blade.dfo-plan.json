@@ -1,0 +1,136 @@
+{
+  "format": "dfo-planner/build",
+  "build": {
+    "v": 1,
+    "name": "",
+    "race": "DarkElf",
+    "gender": "female",
+    "classMode": "custom",
+    "classIndex": 16,
+    "custom": {
+      "name": "Ashen Blade",
+      "hp": 30,
+      "skills": [
+        29,
+        34,
+        20,
+        0,
+        21,
+        16,
+        3,
+        18,
+        17,
+        19,
+        2,
+        1
+      ],
+      "stats": {
+        "strength": 75,
+        "intelligence": 10,
+        "willpower": 10,
+        "agility": 75,
+        "endurance": 70,
+        "personality": 10,
+        "speed": 75,
+        "luck": 75
+      },
+      "advantages": [
+        {
+          "primary": "expertiseIn",
+          "secondary": "longBlade"
+        },
+        {
+          "primary": "immunity",
+          "secondary": "toParalysis"
+        },
+        {
+          "primary": "immunity",
+          "secondary": "toDisease"
+        },
+        {
+          "primary": "athleticism",
+          "secondary": ""
+        },
+        {
+          "primary": "adrenalineRush",
+          "secondary": ""
+        }
+      ],
+      "disadvantages": [
+        {
+          "primary": "darknessPoweredMagery",
+          "secondary": "unableToUseMagicInDaylight"
+        },
+        {
+          "primary": "lightPoweredMagery",
+          "secondary": "unableToUseMagicInDarkness"
+        },
+        {
+          "primary": "inabilityToRegen",
+          "secondary": ""
+        },
+        {
+          "primary": "forbiddenMaterial",
+          "secondary": "elven"
+        },
+        {
+          "primary": "forbiddenMaterial",
+          "secondary": "adamantium"
+        },
+        {
+          "primary": "forbiddenMaterial",
+          "secondary": "mithril"
+        },
+        {
+          "primary": "forbiddenMaterial",
+          "secondary": "silver"
+        }
+      ],
+      "reps": {
+        "merchants": 0,
+        "peasants": 0,
+        "scholars": 0,
+        "nobility": 0,
+        "underworld": 0
+      }
+    },
+    "rolls": {
+      "preset": "typical",
+      "stats": {
+        "strength": 5,
+        "intelligence": 5,
+        "willpower": 5,
+        "agility": 5,
+        "endurance": 5,
+        "personality": 5,
+        "speed": 5,
+        "luck": 5
+      },
+      "pool": 10,
+      "skills": {}
+    },
+    "statSpend": {
+      "strength": 2,
+      "intelligence": 0,
+      "willpower": 0,
+      "agility": 2,
+      "endurance": 2,
+      "personality": 0,
+      "speed": 2,
+      "luck": 2
+    },
+    "skillSpend": {
+      "0": 6,
+      "3": 6,
+      "29": 6
+    },
+    "bio": {},
+    "reflexes": 2,
+    "settings": {
+      "online": true,
+      "overhaul": true,
+      "leveling": "classic",
+      "planLevel": 10
+    }
+  }
+}

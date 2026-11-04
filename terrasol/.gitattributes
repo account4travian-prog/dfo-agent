@@ -1,0 +1,3 @@
+# Preserve vendored provenance hashes across Windows checkouts.
+vendor/native-agent/** -text whitespace=cr-at-eol
+vendor/legacy-agent/** -text whitespace=cr-at-eol

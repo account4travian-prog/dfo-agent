@@ -1,0 +1,13 @@
+// Source register carried forward from the previous authored guide, now attached to
+// the Play Guide's actual topic headings. The article markdown remains untouched.
+export const playSources={
+ 'How to catch up': 'src/net/renown.js (renownRaidXp, renownPartyXp); src/net/starfall/starfallLaw.js; server-account/src/stars.js (STAR_CLAIMS_DAY_MAX); src/net/marksLaw.js (MARKS_COMBAT, MARKS_FAUCETS); src/net/professionLaw.js (COURT_WRITS_PER_DAY); src/net/motherlodeLaw.js; src/net/gate/gateLaw.js (gateTimes); src/net/raid/raidLaw.js; src/net/serpent/serpentLaw.js (serpentTimes); src/net/townSeatLaw.js (WATCH_DAY_CAP); src/systems/mentorMode.js.',
+ 'Dungeons without': 'src/systems/dungeon/dungeonRespawn.js (DUNGEON_RESPAWN_MS, ELITE_DUNGEON_RESPAWN_MS); src/world/spawnedDungeons.js; bible/11-Multiplayer/Instances.md.',
+ "Where it's safe": 'src/systems/loot/lootRarity.js (DUNGEON_RARITY_TIER); src/systems/wild/wildZone.js (WILD_FOE_HEALTH_MULT, WILD_FOE_DAMAGE_MULT); bible/05-Combat/Balance-Arc.md (BAL3); bible/11-Multiplayer/Wild-Zone.md.',
+ 'How power': 'src/net/renown.js (renownKillXp, renownQuestXp, renownRaidXp, renownPartyXp, RENOWN_XP_HOUR_MAX); src/systems/masterSkills.js (MASTERY_SLOTS); src/net/firmament/firmamentTree.js (FIRM_NODES); bible/05-Combat/Balance-Arc.md (BAL11).',
+ 'Quests are': 'src/systems/questlines/qlLines.js; src/systems/questlines/qlLineRunner.js (createLineRunner, letterOnItsWay, RETRY_GAP_S); src/systems/quest/actions.js (GivePc); bible/06-Systems/Questlines-Arc.md; bible/11-Multiplayer/Instances.md.',
+ 'A plan for': 'src/systems/deathPenalty.js; src/systems/loot/lootRarity.js; src/combat/technique/techniqueRoster.js (TECHNIQUES, TECHNIQUE_PER_MILLE); src/combat/techniques.js; src/systems/masterSkills.js; src/systems/skillSwap.js (SKILL_SWAP_GOLD); src/systems/martialPaths.js; src/systems/specReset.js; docs/05-strongest-melee.md.',
+ 'Building Tiger': 'src/systems/advancement.js; src/systems/levelEven.js (ONLINE_BONUS_POOL); src/net/firmament/firmamentLaw.js (starsFor, BLOW_CAP, refundSilver); src/systems/masterSkills.js; src/systems/skillSwap.js; src/systems/martialPaths.js; src/systems/revenant/revenantStars.js.',
+ 'The professions': 'src/net/professionLaw.js (CRAFTS_ABOVE_JOURNEYMAN, JOURNEYMAN_RANK); src/net/recipeLaw.js; src/net/alchemyLaw.js (BREWER); docs/05-strongest-melee.md.',
+ 'Quick reference': 'src/systems/dungeon/dungeonRespawn.js; src/world/spawnedDungeons.js; src/systems/deathPenalty.js; src/net/renown.js; src/net/professionLaw.js; src/systems/skillSwap.js; src/systems/specReset.js; bible/05-Combat/Balance-Arc.md.'
+};
